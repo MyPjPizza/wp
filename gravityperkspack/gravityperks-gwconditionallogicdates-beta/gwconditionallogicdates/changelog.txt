@@ -1,0 +1,115 @@
+
+# Changelog
+
+## 1.0.beta5.7
+
+    - Fixed issue where modify_frontend_form_object() was expecting two parameters though it only required one
+
+## 1.0.beta5.6
+
+    - Fixed issue where Post Custom Field with Date input type were not supported
+
+## 1.0.beta5.5
+
+    - Update {today} merge tag to use configured WP time as the base timestamp
+
+## 1.0.beta5.4
+
+    - Fixed issue where $form object was not correclty return for forms that did not contain date-based conditional logic
+    - Fixed issue where inline scripts output in footer were still output too early
+
+## 1.0.beta5.3
+
+    - Updated inline script to output in footer (fixes issues when GF scripts loaded in footer)
+
+## 1.0.beta5.2
+
+    - Added support for {monday} - {sunday} merge tags for determining the day of the week
+
+## 1.0.beta5.1
+
+    - Fixed issue where adding Date field to form when WP_DEBUG was enabled would cause JS error.
+
+## 1.0.beta5.0
+
+    - Added support for {month} and {day} merge tags; can be used to check logic by month month (e.g. '7/{day}/{month}') or by day (e.g. '{month}/15/{year}')
+
+## 1.0.beta4.1
+
+    - Fixed issue where gf_apply_rules() was being called for Date fields when conditional logic was not applied
+    - Fixed conflict with OptimizePress theme which outputs inline scripts earlier than expected
+    - Updated {year} merge tag to support a modifier (i.e. "+1 year", "+2 years")
+
+## 1.0.beta4.0
+
+    - Added support for special {year} merge tag; available only for date-based conditional logic
+
+## 1.0.beta3.11
+
+    - Fixed issue where date fields in different formats (dot/dash) were not interpreted correctly
+
+## 1.0.beta3.10
+
+    - Rolled back changes where timestamp conversion happened when the form was retrieved from database; will be updated soon to convert only when processing date logic.
+
+## 1.0.beta3.9
+
+    - Updated conditional logic so that a date must be selected before logic is processed
+
+## 1.0.beta3.8
+
+    - Updated how form object was filtered for conversion of dates to timestamps in conditional logic rules; happens globally now excluding the form editor
+
+## 1.0.beta3.7
+
+    - Added support for Date fields in routing conditions (requires Gravity Forms v1.9.5.7)
+    - Added documentation link to first draft post
+
+## 1.0.beta3.6
+
+	- Fixed issue where inline form script was output incorrectly on AJAX forms
+	- Fixed issue where conditional logic was not working when resending notifications (for real this time with more to come)
+
+## 1.0.beta3.5
+
+	- Fixed issue where conditional logic was not working when resending notifications
+
+## 1.0.beta3.4
+
+    - Fixed issue where conditional logic was not working when processed in the backend
+
+## 1.0.beta3.3
+
+    - Fixed issue on Entry Detail view where gform object was not avaialble
+
+## 1.0.beta3.2
+
+    - Fixed issue where in some cases date format was not specified
+
+## 1.0.beta3.1
+
+    - Added support for allowing conditional logic date fields to use all GF date formats
+
+## 1.0.beta3.0
+
+    - Updated add-on to work with Gravity Forms 1.9
+
+## 1.0.beta2
+
+- Removed are_dates_converted() method in favor of validating whether the value has been converted to a timestamp yet
+
+## 1.0.beta1.2
+
+- Fixed issue where conditional logic date value conversion was not happening when navigating backwards through a form
+
+## 1.0.beta1.1
+
+- Fixed issue where conditional logic date value conversion was failing on multi-page forms
+
+## 1.0.beta1
+
+- Updated which GF hooks are used to auto-convert date-based conditional logic rules in the $form object
+
+## 0.4
+
+- Added support for converting date-based conditional logic rule values on pre-submission and pre-validation; makes it easier for plugins to integrate

@@ -1,0 +1,37 @@
+
+# Changelog
+
+## 1.0.7
+
+	- Fixed notice generated when checking for existing file ID when none existed.
+	- Fixed notice genrated when replacing merge tags without an entry object.
+
+## 1.0.6
+
+    - Fixed issue w/ 3rd party integrations where GPML failed to correctly locate the existing attachment when the attachment URL did not match the guid.
+
+## 1.0.5
+
+    - Fixed fatal error that occurred w/ WC GF Product Add-ons (surprise!).
+
+## 1.0.4
+
+	- Added support for ":link" modifier; automatically wraps generated <img> in a link to the full sized image.
+	- Added support for automatically replacing GPML-enabled field images with the medium-sized thumbnail when viewed in Gravity View.
+
+## 1.0.3
+
+    - Added support for mapping GF Multi-file Upload fields to ACF's Gallery field.
+
+## 1.0.2
+
+	- Fixed fatal error when download_url() function failed.
+	- Updated upload_to_media_library() function to use original Gravity Forms image.
+
+## 1.0.1
+
+	- Added support for image merge tags (i.e. {File:1:medium} and {Multi-file Upload:2:thumbnail:right}).
+
+## 1.0
+
+	- "People can lose their lives in libraries. They ought to be warned." ~ Saul Bellow

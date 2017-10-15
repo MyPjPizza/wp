@@ -1,0 +1,68 @@
+/**
+* Stacked Layouts
+*/
+.pum-age-form.layout-stacked {
+
+  /**
+  * Enter / Exit Form
+  */
+  &[data-type="enterexit"] {
+    .pum-age-buttons {
+      .pum-field {
+        display: block;
+        margin: 0 auto 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        button {
+          min-width: 100px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  /**
+  * Birthdate Form
+  */
+  &[data-type="birthdate"] {
+
+    .pum-age-form-fields {
+      display: inline-block;
+    }
+
+    label {
+      display: block;
+      margin: 0 0 12px;
+    }
+
+    // HTML5 Date Input
+    .pum-date-input {
+      margin: 0 auto 16px;
+
+      input[type="date"] {
+        min-width: 100%;
+      }
+    }
+
+    .pum-date-input-fallback {
+      .pum-field {
+        display: inline-block;
+        margin: 0 8px 16px 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .pum-field-button {
+      button {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+}

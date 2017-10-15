@@ -1,0 +1,41 @@
+.pum-form {
+  margin: 0 auto 16px;
+
+  &.align-left {
+    text-align: left;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+
+  &.align-right {
+    text-align: right;
+  }
+
+  .pum-field {
+    margin-bottom: 1em;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  select, input[type="date"] {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding: 3px;
+    vertical-align: middle;
+  }
+
+  select {
+    padding: 5px 3px;
+  }
+
+  .pum-form-error {
+    margin: 8px 0 0;
+    color: #b51623;
+  }
+}

@@ -1,0 +1,5 @@
+v1.0.5
+Footer credits double link removed - FIXED
+
+v1.0.2
+WordPress 4.7 layout fix due to genesis action priority - FIXED

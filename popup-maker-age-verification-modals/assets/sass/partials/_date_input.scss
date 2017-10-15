@@ -1,0 +1,11 @@
+.pum-date-input {
+  display: none;
+}
+.date-input-enabled {
+  .pum-date-input {
+    display: block;
+  }
+  .pum-date-input-fallback {
+    display: none;
+  }
+}

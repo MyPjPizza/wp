@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Popup Maker - Remote Content\n"
+"POT-Creation-Date: 2015-08-24 02:58-0500\n"
+"PO-Revision-Date: 2015-08-24 02:58-0500\n"
+"Last-Translator: Daniel Iser <danieliser@wizardinternetsolutions.com>\n"
+"Language-Team: Daniel Iser <danieliser@wizardinternetsolutions.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/popups/class.metaboxes.php:27
+#: popup-maker-remote-content.php:167 popup-maker-remote-content.php:241
+msgid "Remote Content"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:64
+#: popup-maker-remote-content.php:186
+msgid "Load From URL"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:65
+msgid "IFrame"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:66
+#: popup-maker-remote-content.php:187
+msgid "AJAX"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:72
+#: popup-maker-remote-content.php:213
+msgid "Lines: Growing"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:73
+#: popup-maker-remote-content.php:214
+msgid "Dots: Growing"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:76
+#: popup-maker-remote-content.php:217
+msgid "Circles: Dots Chasing"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:77
+#: popup-maker-remote-content.php:218
+msgid "Circles: Dots Fading"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:78
+#: popup-maker-remote-content.php:219
+msgid "Circles: Dots Streaking"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:79
+#: popup-maker-remote-content.php:220
+msgid "Circles: Racetrack"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:100
+#: popup-maker-remote-content.php:172
+msgid "Enable Remote Content"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:103
+#: popup-maker-remote-content.php:173
+msgid "This enables Remote Content for this popup."
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:108
+#: popup-maker-remote-content.php:180
+msgid "Type"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:119
+#: popup-maker-remote-content.php:181
+msgid "Choose the type of remote content use."
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:126
+#: popup-maker-remote-content.php:192
+msgid "Function Name"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:129
+#: includes/admin/popups/class.metaboxes.php:130
+#: popup-maker-remote-content.php:194
+msgid "A function that will be called and render results."
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:136
+#: popup-maker-remote-content.php:200
+msgid "CSS Selector"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:139
+#: popup-maker-remote-content.php:201
+msgid "#main .content"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:140
+#: popup-maker-remote-content.php:202
+msgid "Enter the CSS id or selector that we will will load from links."
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:146
+#: popup-maker-remote-content.php:208
+msgid "Loading Icon"
+msgstr ""
+
+#: includes/admin/popups/class.metaboxes.php:157
+#: popup-maker-remote-content.php:210
+msgid "Choose a loding icon style."
+msgstr ""
+
+#: includes/class.extension-activation.php:47
+msgid "This plugin"
+msgstr ""
+
+#: includes/class.extension-activation.php:84
+msgid "activate it"
+msgstr ""
+
+#: includes/class.extension-activation.php:87
+msgid "install it"
+msgstr ""
+
+#: includes/class.extension-activation.php:90
+#, php-format
+msgid " requires Popup Maker! Please %s to continue!"
+msgstr ""
+
+#: popup-maker-remote-content.php:193
+msgid "my_custom_function"
+msgstr ""
+
+#: popup-maker-remote-content.php:215
+msgid "Circles: Streaking"
+msgstr ""
+
+#: popup-maker-remote-content.php:216
+msgid "Circles: Chasing Tail"
+msgstr ""
+
+#: popup-maker-remote-content.php:242
+msgid "Configure Remote Content Settings"
+msgstr ""

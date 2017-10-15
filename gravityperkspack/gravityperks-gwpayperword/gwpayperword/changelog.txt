@@ -1,0 +1,31 @@
+
+# Changelog
+
+## 1.0.7
+
+	- Fixed issue where gravityforms.js dependency was not specified
+
+## 1.0.6
+
+	- Added "gpppw_word_count" filter for modifying the word count
+
+## 1.0.5
+
+    - Fixed issue where line break/carriage returns were not being accounted for when processed server-side
+
+## 1.0.4
+
+    - Fixed issue where line breaks/carriage returns were not being accounted for when calculating word count
+
+## 1.0.3
+
+    - Fixed issue where new 'gwppw_price' hook returned field object instead of price
+
+## 1.0.2
+
+    - Fixed issue where PPW products did not update in calculations (no change event was being triggered)
+
+## 1.0.1
+
+    - Added 2 new filters to be able to hook into the back-end and front-end side of the price calculations. apply_filters('gwppw_price', $price_field, $word_field, $word_count, $price);
+    - Fixed a JavaScript issue where if the number was equal to 0 it would return as Not a Number.

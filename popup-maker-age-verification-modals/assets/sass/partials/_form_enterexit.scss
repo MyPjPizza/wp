@@ -1,0 +1,15 @@
+.pum-age-form[data-type="enterexit"] {
+  .pum-age-buttons {
+    .pum-field-button {
+      display: inline-block;
+      margin: 0 16px 0 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &.pum-age-enter {}
+    &.pum-age-exit {}
+  }
+}

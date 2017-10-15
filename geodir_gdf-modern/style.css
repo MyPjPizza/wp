@@ -1,0 +1,447 @@
+/*
+Theme Name: GDF Modern
+Theme URI: https://wpgeodirectory.com/
+Description: Child Theme for GeoDirectory Framework
+Author: GeoDirectory
+Author URI: https://wpgeodirectory.com/
+Template: GeoDirectory_framework
+Version: 1.0.4
+Update URL: https://wpgeodirectory.com
+Update ID: 65920
+*/
+
+/* STANDARD GDF OPTIONS STYLES */
+header nav {
+    -webkit-border-radius: 0;
+    background: #333;
+    border-radius: 0;
+}
+
+h1.site-title,
+h2.site-description {
+    margin: 0;
+}
+
+h1.site-title a,
+h1.site-title a:hover {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+}
+
+h2.site-description {
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+h1,
+.term_description {
+    width: auto;
+}
+
+.header {
+    background-color: #fff;
+}
+
+header nav .nav li a {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1em 1.5em;
+}
+
+header nav ul li:first-child a {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 1.5em;
+}
+
+header nav .nav li a,
+header nav .nav li a:hover {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+header nav .nav li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.top-nav .sub-menu {
+    background-color: #333;
+}
+
+.nav li ul.sub-menu,
+.nav li ul.children,
+.nav li ul.sub-menu li a,
+.nav li ul.sub-menu li ul.sub-menu li a,
+.nav li ul.children li a {
+    border-color: #000;
+}
+
+.geodir_location_tab_container {
+    background: #333;
+    border: none;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.geodir-onethird,
+#geodir_content,
+#gd-sidebar-wrapper {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.geodir-content-right,
+.geodir-content-left,
+.gd-third-left,
+.gd-third-right,
+#gd-sidebar-wrapper {
+    background-color: #FFFFFF;
+}
+
+.geodir_button,
+.geodir_submit_search,
+.blue-btn,
+.comment-reply-link,
+#submit,
+button
+input[type="button"],
+input[type="submit"],
+#simplemodal-container .button,
+#geodir_wrapper #showFilters {
+    background-color: #f47a20;
+}
+
+body,
+#geodir_wrapper .geodir-common p,
+.entry-content p,
+.hreview-aggregate span {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+a, .geodir_link_span,
+.geodir-more-contant li a span.geodir_link_span,
+#geodir_wrapper #geodir-category-list a span.geodir_link_span {
+    color: #f01d4f;
+}
+
+a:hover {
+    color: #d10e3c;
+}
+
+a:active {
+    color: #d10e3c;
+}
+
+a:visited {
+    color: #f01d4f;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+h3,
+#simplemodal-container h3 {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.footer {
+    background-color: #333;
+}
+
+.footer,
+.footer a,
+.footer a:focus,
+.footer a:hover,
+.footer .nav li a,
+.footer .nav li a:focus,
+.footer .nav li a:hover {
+    color: #FFFFFF;
+}
+
+/* Breadcrumbs */
+#breadcrumb-wrapper {
+    background: #fafafa;
+    width: 100%
+}
+
+.geodir-breadcrumb {
+    width: 1200px;
+}
+
+.geodir-breadcrumb ul li {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Structural wraps */
+#inner-header {
+    padding: 40px 0;
+}
+
+.header-right-area {
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.geodir-widget {
+    margin: 0;
+}
+
+.wrap,
+.geodir-common {
+    width: 1200px;
+}
+
+.geodir-common {
+    margin-top: 40px;
+}
+
+#geodir_content,
+#gd-sidebar-wrapper {
+    /*padding: 30px 40px;*/
+}
+
+.widget {
+    padding: 0;
+}
+
+.hentry header {
+    padding-top: 0;
+}
+
+.hentry header,
+.entry-content,
+.hentry footer {
+    border-bottom: 1px solid #eee;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Sidebar Widget Wraps */
+#gd-sidebar-wrapper section.widget {
+    border-bottom: 5px double #eee;
+    /*margin: 30px -40px;
+    padding: 0 40px 30px;*/
+}
+
+#gd-sidebar-wrapper section.widget p {
+    font-size: 14px;
+}
+
+#gd-sidebar-wrapper section.widget:first-child {
+    margin-top: 0;
+}
+
+#gd-sidebar-wrapper section.widget:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.geodir-company_info {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.geodir-company_info .geodir_more_info:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Top Widgets */
+.geodir_full_page .geodir-widget {
+    margin-top: 20px;
+}
+
+.geodir_full_page .geodir-widget:first-child {
+    margin-top: 40px;
+}
+
+.gdf-modern-home .geodir_full_page .geodir_advance_search_widget {
+    margin-top: 0;
+}
+
+.geodir-category-list-in,
+.geodir-loc-bar {
+    background: none;
+    border: none;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.gdf-modern-home .geodir-loc-bar {
+    max-width: 100%;
+}
+
+.geodir-cat-list {
+    background: #fff;
+    padding: 20px 40px;
+}
+
+.geodir-loc-bar-in {
+    background: #333;
+    border: none;
+    padding: 20px 0;
+}
+
+/* Headings */
+.geodir-common .entry-header {
+    background: #fff;
+    border: none;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+}
+
+.geodir-common #geodir_content .entry-header {
+    margin-bottom: 0;
+    padding: 0 0 40px;
+}
+
+#geodir_wrapper .entry-title {
+    width: 100%;
+}
+
+#geodir_content .geodir_list_heading {
+    margin: 0;
+}
+
+.geodir_list_heading {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#related_listingTab .geodir-entry-header {
+    border-bottom: none;
+}
+
+#gd-sidebar-wrapper .widget-title,
+#gd-sidebar-wrapper .geodir_list_heading {
+    border-bottom: 1px solid #eee;
+    margin: 0 0px 30px;
+    padding: 0 40px 30px;
+    margin-left: -40px;
+}
+
+#gd-sidebar-wrapper .geodir_list_heading .widget-title {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* GD Elements */
+.geodir_category_list_view li {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.geodir-category-listing {
+    background: #fff;
+    overflow: hidden;
+}
+
+#related_listingTab .geodir_category_list_view li.gridview_onehalf:nth-child(2n+2),
+#related_listingTab .geodir_category_list_view li.gridview_onethird:nth-child(3n+3),
+#related_listingTab .geodir_category_list_view li.gridview_onefourth:nth-child(4n+4),
+#related_listingTab .geodir_category_list_view li.gridview_onefifth:nth-child(5n+5) {
+    margin-right: 0;
+}
+
+.geodir_category_list_view li.geodir-gridview {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+}
+
+.geodir_category_list_view li.geodir-gridview h3 {
+    border-bottom: 1px solid #eee;
+    margin: 0 -5%;
+    padding: 10px 5%;
+}
+
+.geodir_category_list_view li.geodir-listview h3 {
+    font-size: 18px;
+}
+
+#geodir_wrapper .geodir-common p.geodir_post_taxomomies {
+    font-size: 14px;
+}
+
+/* Chosen Elements */
+#menu-item-gd-location-switcher .geodir_location_sugestion a,
+#menu-item-gd-location-switcher dd a {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.geodir-chosen-container-single .chosen-single {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    padding: 10px;
+}
+
+.geodir-chosen-container-single .chosen-single div b {
+    margin-top: 10px;
+}
+
+/* Remove Border Radius From Buttons & Input Fields */
+.geodir_button,
+.geodir_submit_search,
+.blue-btn,
+.comment-reply-link,
+#submit, button,
+input[type="button"],
+input[type="submit"],
+#simplemodal-container .button,
+.showFilters,
+.geodir-search select,
+.geodir-search input[type="text"] {
+    border-radius: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1280px) {
+    .wrap,
+    .geodir-common,
+    .geodir-breadcrumb,
+    #geodir_wrapper .geodir_full_page .geodir-search,
+    #geodir_wrapper h1,
+    #geodir_wrapper .term_description {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .site-logo {
+        margin-bottom: 20px;
+    }
+
+}

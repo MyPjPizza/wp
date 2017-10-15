@@ -1,0 +1,138 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Utility\n"
+"POT-Creation-Date: 2016-12-20 02:30-0500\n"
+"PO-Revision-Date: 2016-02-15 01:21-0500\n"
+"Last-Translator: Naomi C. Bush <hello@naomicbush.com>\n"
+"Language-Team: gravity+ <support@gravityplus.pro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_html__;esc_html_e;_x;_ex;"
+"esc_attr_x;esc_html_x;_n;_nx;_n_noop;_nx_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../tools\n"
+
+#: ../tools/hide-form-user-submitted.php:72
+msgid "Restrictions"
+msgstr ""
+
+#: ../tools/hide-form-user-submitted/gform-form-settings.php:9
+msgid "Hide form if user already submitted"
+msgstr ""
+
+#: ../tools/hide-form-user-submitted/gform-form-settings.php:15
+msgid "Hide form if logged-in user already submitted this form"
+msgstr ""
+
+#: ../tools/prevent-entry-creation/gform-form-settings.php:9
+msgid "Prevent entry creation"
+msgstr ""
+
+#: ../tools/prevent-entry-creation/gform-form-settings.php:15
+msgid "Prevent entries from being created for this form"
+msgstr ""
+
+#: ../tools/redact.php:99
+#: ../tools/redact/views/gform-field-advanced-settings-redact.php:9
+msgid "Redact"
+msgstr ""
+
+#: ../tools/redact.php:99
+msgid ""
+"Check this box if you do *not* want the information the user places in this "
+"field to be saved to the entry. The information will be unrecoverable, but "
+"it will be available to functions that use entry values to perform actions "
+"while the form is submitting (like notifications)."
+msgstr ""
+
+#: ../tools/send-notification-entry-update.php:62
+msgid "Entry is updated"
+msgstr ""
+
+#: ../tools/show-page-on-form-list.php:49
+msgid "Page"
+msgstr ""
+
+#: ../tools/show-page-on-form-list.php:81
+msgid "Edit Page"
+msgstr ""
+
+#: ../tools/show-page-on-form-list.php:81
+msgid "Edit"
+msgstr ""
+
+#: ../tools/show-page-on-form-list.php:81
+msgid "View Page"
+msgstr ""
+
+#: ../tools/show-page-on-form-list.php:81
+msgid "View"
+msgstr ""
+
+#: ../tools/show-page-on-toolbar.php:60
+msgid "Page: "
+msgstr ""
+
+#: ../tools/toggle-all-fields-required.php:52
+msgid "Toggle All Fields Required"
+msgstr ""
+
+#: ../tools/toggle-all-fields-required.php:69
+msgid "All fields set as required"
+msgstr ""
+
+#: ../tools/toggle-all-fields-required.php:69
+msgid "All fields unset as required"
+msgstr ""
+
+#: ../tools/trigger-feeds.php:58 ../tools/trigger-feeds.php:82
+#: ../tools/trigger-feeds.php:109 ../tools/trigger-feeds/views/modal.php:33
+msgid "Trigger Feeds"
+msgstr ""
+
+#: ../tools/trigger-feeds.php:78
+msgid "You must select at least one feed to trigger."
+msgstr ""
+
+#: ../tools/trigger-feeds.php:79
+#, php-format
+msgid "Feeds for %s were triggered successfully."
+msgstr ""
+
+#: ../tools/trigger-feeds.php:80
+msgid "entries"
+msgstr ""
+
+#: ../tools/trigger-feeds.php:81
+msgid "entry"
+msgstr ""
+
+#: ../tools/trigger-feeds.php:170
+msgid "There was an error while triggering the feeds."
+msgstr ""
+
+#: ../tools/trigger-feeds.php:182
+msgid "No feeds have been selected. Please select a feed to be triggered."
+msgstr ""
+
+#: ../tools/trigger-feeds/views/modal.php:16
+msgid ""
+"You cannot trigger feeds for these entries because this form does not "
+"currently have any feeds configured."
+msgstr ""
+
+#: ../tools/trigger-feeds/views/modal.php:21
+msgid ""
+"Specify which feeds you would like to trigger for the selected entries."
+msgstr ""
+
+#: ../tools/trigger-feeds/views/modal.php:35
+msgid "Triggering..."
+msgstr ""
+
+#: ../tools/trigger-feeds/views/modal.php:44
+msgid "Close Window"
+msgstr ""

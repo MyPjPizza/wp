@@ -1,0 +1,15 @@
+
+# Changelog
+
+## 1.0.2
+
+    - Fixed issue where entry was not disabled when GFUR was not active (doh!)
+
+## 1.0.1
+
+    - Updated priority of some hooks to avoid order-of-events conflicts, props @richardW8k
+    - Fixed issue where $config 'active' index may not be defined
+
+## 1.0
+
+    - Oh, oh, oh, oh, staying alive!

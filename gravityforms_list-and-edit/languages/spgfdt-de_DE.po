@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms - MySQL Connect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-18 18:39+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ralf Fuhrmann <admin@specialpress.net>\n"
+"Language-Team: Ralf Fuhrmann <admin@specialpress.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/gravityforms_datatables.gfapi.php:258
+#: classes/gravityforms_datatables.gfapi.php:260
+#: gravityforms_datatables.gfapi.php:258 gravityforms_datatables.gfapi.php:260
+msgid "Change"
+msgstr "Bearbeiten"
+
+#: classes/gravityforms_datatables.gfapi.php:268
+#: classes/gravityforms_datatables.gfapi.php:270
+#: gravityforms_datatables.gfapi.php:268 gravityforms_datatables.gfapi.php:270
+msgid "Delete"
+msgstr "Löschen"
+
+#: gravityforms_datatables.class.php:289
+msgid "No form found"
+msgstr "Kein Formular gefunden"
+
+#: gravityforms_datatables.class.php:348
+msgid "You must be an admin to view this list."
+msgstr ""
+"Um diese Liste sehen zu können must Du als Administrator angemeldet sein."
+
+#: gravityforms_datatables.class.php:356
+msgid "You must be logged in to view this list."
+msgstr "Um diese Liste sehen zu können must Du angemeldet sein."
+
+#: gravityforms_datatables.class.php:502
+msgid "There are no fields to display"
+msgstr "Keine Felder zum anzeigen gefunden"
+
+#: gravityforms_datatables.class.php:635 gravityforms_datatables.class.php:637
+msgid "Addnew"
+msgstr "Hinzufügen"
+
+#: gravityforms_datatables.class.php:687
+msgid "Gravitylist Order"
+msgstr "Gravitylist Reihenfolge"
+
+#: gravityforms_datatables.class.php:739
+msgid "everyone"
+msgstr "jeden"
+
+#: gravityforms_datatables.class.php:740
+msgid "logged in"
+msgstr "angemeldet"
+
+#: gravityforms_datatables.class.php:741
+msgid "entry creator"
+msgstr "Eintrags Eigentümer"
+
+#: gravityforms_datatables.class.php:742
+msgid "only to the admin"
+msgstr "nur für den Administrator"
+
+#: gravityforms_datatables.class.php:757
+msgid "Show records to "
+msgstr "Datensätze sichtbar für"
+
+#: gravityforms_datatables.class.php:760
+msgid "To wich users to entries should be displayed"
+msgstr "Für welche Anwender sollen die Datensätze sichtbar sein "
+
+#: gravityforms_datatables.class.php:782
+msgid "Enable Paging "
+msgstr "Seitenansicht aktivieren"
+
+#: gravityforms_datatables.class.php:785
+msgid "Enable the Paging-Mode at the DataTable"
+msgstr "Aktiviert die Seitenansicht der Daten-Tabelle"
+
+#: gravityforms_datatables.class.php:804
+msgid "Enable ordering"
+msgstr "Sortierung aktivieren"
+
+#: gravityforms_datatables.class.php:807
+msgid "Enable the Ordering-Mode at the DataTable"
+msgstr "Aktiviert die Sortierung der Daten-Tabelle"
+
+#: gravityforms_datatables.class.php:811
+msgid "Enable Searching"
+msgstr "Suchfunktion aktiviert"
+
+#: gravityforms_datatables.class.php:814
+msgid "Enable the Search-Box at the DataTable"
+msgstr "Aktiviert die Suchfunktion der Daten-Tabelle"
+
+#: gravityforms_datatables.class.php:832
+msgid "Gravity Forms API"
+msgstr "Gravity Forms API"
+
+#: gravityforms_datatables.class.php:852
+msgid "Preferred Data Source"
+msgstr "Bevorzugte Datenherkunft"
+
+#: gravityforms_datatables.class.php:855
+msgid "Wich Data-Source do you prefer to build the list."
+msgstr "Bitte wähle Deine bevorzugte Herkunft der Daten."
+
+#~ msgid "all"
+#~ msgstr "alle"
+
+#~ msgid "SAP User Connect Settings"
+#~ msgstr "SAP User Connect Einstellungen"
+
+#~ msgid "Connect Settings"
+#~ msgstr "Verbindungs Parameter"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Plugin Einstellungen"
+
+#~ msgid "Only SAP-Users could register"
+#~ msgstr "Nur SAP-Benutzer dürfen sich Registrieren"
+
+#~ msgid "Only SAP-Users could login"
+#~ msgstr "Nur SAP-Benutzer dürfen sich Anmelden"
+
+#~ msgid "Exclude Users"
+#~ msgstr "Benutzer ausschliessen"
+
+#~ msgid ""
+#~ "Add the Usernames that should not be checked against SAP(e.g. the ADMIN). "
+#~ "Seperate the usernames with a comma"
+#~ msgstr ""
+#~ "Tragen Sie hier die Benutzernamen ein, die beim Anmelden NICHT gegen SAP "
+#~ "geprüft werden sollen (z.b. der Wordpress Admin). Bitte trennen Sie die "
+#~ "Benutzernamen mit einem Komma."
+
+#~ msgid "Please Note !<br />Your username will be checked against SAP."
+#~ msgstr "Achtung !<br />Der Benutzername wird gegen SAP geprüft."
+
+#~ msgid ""
+#~ "Username <strong>%s</strong> doesn't exist in SAP. <br />Please use your "
+#~ "SAP Username to Register."
+#~ msgstr ""
+#~ "Benutzername <strong>%s</strong> existiert nicht in SAP. <br />Bitte "
+#~ "verwenden Sie Ihren SAP-Benutzernamen zur Registrierung."
+
+#~ msgid ""
+#~ "Username <strong>%s</strong> doesn't exist in SAP. <br />Please use your "
+#~ "SAP Username to Login."
+#~ msgstr ""
+#~ "Benutzername <strong>%s</strong> existiert nicht in SAP. <br />Bitte "
+#~ "verwenden Sie Ihren SAP-Benutzernamen zur Anmeldung"
+
+#~ msgid "Determine Details for an User"
+#~ msgstr "Zeigt Details zum Benutzer an"
+
+#~ msgid "Not a SAP User"
+#~ msgstr "Kein SAP Benutzer"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"

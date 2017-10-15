@@ -1,0 +1,2056 @@
+/*
+Theme Name: GeoDirectory Framework
+Theme URI: http://wpgeodirectory.com/
+Author: GeoDirectory
+Author URI: http://wpgeodirectory.com/
+Description: This theme was built to be used with the GeoDirectory plugin . You should use a child theme.
+Version: 1.2.8
+License: GPLv2 or greater
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: left-sidebar, right-sidebar, one-column, two-columns, theme-options, custom-header, custom-background, fluid-layout, responsive-layout, accessibility-ready, translation-ready, microformats, rtl-language-support
+
+This theme is licensed under the GPL.
+*/
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio, canvas, video {
+	display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+ display: none;
+ height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden], template {
+ display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+	font-family: sans-serif;
+	/* 1 */
+  -ms-text-size-adjust: 100%;
+	/* 2 */
+  -webkit-text-size-adjust: 100%;
+/* 2 */ }
+/**
+ * Remove default margin.
+ */
+body {
+	margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+	background: transparent;
+}
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+	outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+	outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+	/*font-size: 2em;*/
+	margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b, strong, .strong {
+	font-weight: bold;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn, em, .em {
+	font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+/*
+ * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
+*/
+p {
+	-webkit-hyphens: auto;
+	-epub-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+pre {
+	margin: 0;
+}
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code, kbd, pre, samp {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+	white-space: pre-wrap;
+}
+/**
+ * Set consistent quote types.
+ */
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+q:before, q:after {
+	content: '';
+	content: none;
+}
+small, .small {
+	font-size: 75%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/* ==========================================================================
+  Lists
+========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+dl, menu, ol, ul {
+	margin: 1em 0;
+}
+dd {
+	margin: 0;
+}
+/*
+ * Addresses paddings set differently in IE6/7.
+ */
+menu {
+	padding: 0 0 0 40px;
+}
+ol, ul {
+	padding: 0;
+	list-style-type: none;
+}
+/*
+ * Corrects list images handled incorrectly in IE7.
+ */
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+/* ==========================================================================
+  Embedded content
+========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+	border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+ overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+	margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+	border: 0;
+	/* 1 */
+  padding: 0;
+/* 2 */ }
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button, input, select, textarea {
+	font-family: inherit;
+	/* 1 */
+  font-size: 100%;
+	/* 2 */
+  margin: 0;
+/* 3 */ }
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button, input {
+	line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button, select {
+	text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	/* 2 */
+  cursor: pointer;
+/* 3 */ }
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box;
+	/* 1 */
+  padding: 0;
+/* 2 */ }
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+  -moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	/* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+ -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+ border: 0;
+ padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+	overflow: auto;
+	/* 1 */
+  vertical-align: top;
+/* 2 */ }
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.image-replacement, .ir {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.clearfix, .cf, .comment-respond {
+	zoom: 1;
+}
+.clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+	content: "";
+	display: table;
+}
+.clearfix:after, .cf:after, .comment-respond:after {
+	clear: both;
+}
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif !important;
+	font-style: italic;
+}
+/*********************
+FONT FACE (IN YOUR FACE)
+*********************/
+p {
+	/*-ms-word-break: break-all;
+	-ms-word-wrap: break-all;
+	word-break: break-word;
+	word-break: break-word;*/
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	-webkit-hyphenate-before: 2;
+	-webkit-hyphenate-after: 3;
+	hyphenate-lines: 3;
+	-webkit-font-feature-settings: "liga", "dlig";
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	-ms-font-feature-settings: "liga", "dlig";
+	-o-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+}
+
+.gallery-caption {
+  color: white;
+  text-align: center; }
+ 
+span.bypostauthor {
+  border-left: 1px solid white;
+  color: white;
+  font-size: 0.5em;
+  margin-left: 0.6em;
+  padding-left: 0.5em;
+  vertical-align: middle; }
+/* ==========================================================================
+  GeoDirectory
+========================================================================== */
+.full #geodir_content{
+    float: left;
+    padding: 10px 10px 0;
+    width: 100%;
+}
+
+.geodir-breadcrumb ul li {
+	padding-bottom:0px;
+	padding-top:10px;
+	margin-bottom:-10px;
+}
+.wrap, .geodir-common {
+	width: 1040px;
+	margin:0px auto;
+}
+/*body.single div.clearfix:first-child, body.category div.clearfix:first-child, body.page div.clearfix:first-child {
+	max-width:1040px;
+	margin:0px auto;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}*/
+body.page .geodir_full_page div.clearfix:first-child{max-width:100%}
+.map_category ul.treeview {margin:0px;}
+.map-places-listing.triggermap_fullscreen ul.place-list{line-height:0.9;}
+.geodir-login #geodir_content {
+	width:100%;
+}
+.last-col {
+	float: right;
+	padding-right: 0;
+}
+.geodir_button {
+	padding:2px 15px;
+}
+.geodir-common, .geodir_full_page {
+	margin:0px auto;
+}
+.geodir-common {
+	margin-top:20px;
+}
+/*{*/
+	/*max-width:none;*/
+/*}*/
+.geodir_full_page .widget, .geodir_full_page .geodir-widget {
+	margin:0px auto;
+	padding:0px;
+}
+.geodir_full_page .geodir_map_container {
+	margin:0px auto;
+}
+.geodir_full_page .geodir-category-list-in {
+	margin-top:0px;
+}
+.geodir-breadcrumb, .geodir_full_page .geodir-search {
+	width:1040px;
+	margin:0px auto;
+	float:none;
+}
+h1, .term_description {
+	width:1040px;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+h1 {
+	padding-bottom:0px;
+}
+#geodir_wrapper h1 {
+    width: 100%;
+}
+.geodir_full_page .geodir-search input[type="text"] {
+	width:38%;
+	max-width:100%;
+	margin-left:0px;
+	margin-right:1%;
+}
+.geodir-cat-list ul {
+	margin:0px;
+}
+.geodir-loc-bar {
+	margin:0px;
+	padding:0px;
+}
+.geodir-common .geodir-onethird:first-child {
+	margin-left:0px;
+}
+.geodir-breadcrumb {
+	padding:0px;
+/*padding-bottom:*/
+}
+.geodir-breadcrumb ul {
+	margin-top:0px;
+}
+.geodir_full_page .geodir-search .geodir_submit_search,
+.geodir_full_page .geodir-search .showFilters{
+	font-size: 20px;
+	width: 22%;
+	height: 38px;
+	padding:0px;
+	margin-right:0px;
+	margin-left:0px;
+}
+.geodir_full_page .showFilters{height:38px;line-height:38px;}
+.geodir_full_page .geodir-loc-bar-in{
+	padding-left:0px;
+	padding-right:0px;
+}
+body.archive .geodir-common .geodir-onethird .geodir-content-content{
+	padding-left:6px;
+	padding-top:6px;
+}
+.geodir-post-img .geodir_thumbnail img {
+	max-height:280px!important;
+}
+
+.geodir-onethird .geodir-content-content{
+	margin-left:0px;
+	margin-top:0px;
+}
+/*
+######################################################
+MOBILE NAVIGATION RIGHT
+######################################################
+*/
+#mobile-navigation-right input,
+#mobile-navigation-right select{
+	width:100%;
+	margin:5px;
+}
+/*
+######################################################
+PLACE DETAILS
+######################################################
+*/
+.geodir-sidebar-wrap .geodir-company_info:first-child{margin-top:-1px;}
+.geodir-company_info{
+	margin-left:10px;
+	margin-right:10px;
+}
+#geodir_content {
+	overflow:hidden;
+}
+#gd-sidebar-wrapper{overflow:visible;}
+#geodir_content {
+	width:67%;
+	padding:10px 10px 0;
+	float:left;
+}
+#gd-sidebar-wrapper {
+	width:30%;
+	margin-left:3%;
+	float:left;
+}
+#gd-sidebar-wrapper {
+	padding-top:0px;
+}
+#gd-sidebar-wrapper.geodir-sidebar-left{
+margin-left:0%;
+margin-right:3%;
+}
+/*
+######################################################
+POSTS AND PAGES
+######################################################
+*/
+
+  /* entry content */
+  .entry-content {
+/* at this larger size, we can start to align images */ }
+.entry-content .alignleft, .entry-content img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+}
+.entry-content .alignright, .entry-content img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+}
+.entry-content .aligncenter, .entry-content img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+/*
+######################################################
+LOGIN PAGE
+######################################################
+*/
+.login_form_l h4, .registration_form_r h4 {
+	margin:0px;
+}
+/*
+######################################################
+FOOTER
+######################################################
+*/
+.footer a {
+	text-decoration:none;
+}
+.footer a:hover {
+	text-decoration:underline;
+}
+.footer hr {
+	border: 0;
+	border-bottom: 1px solid #444;
+	background: #444;
+}
+.footer nav {
+	float:right;
+	padding-top:3px;
+}
+.f-col-1 {
+	float:left;
+	width:100%;
+}
+.f-col-2 {
+	float:left;
+	width:50%;
+}
+.f-col-3 {
+	float:left;
+	width:33.33%;
+}
+.f-col-4 {
+	float:left;
+	width:25%;
+}
+/*
+######################################################
+POPUP FORMS
+######################################################
+*/
+#simplemodal-container input[type="text"] {
+	height:30px;
+	margin-bottom:5px;
+}
+#simplemodal-container .row {
+	margin-bottom:0px;
+}
+#simplemodal-container .row textarea {
+	height:75px;
+	min-height:inherit;
+}
+#simplemodal-container .button {
+	margin-left:0px;
+}
+#simplemodal-container .row input, #simplemodal-container .row textarea {
+	width:245px;
+}
+/*
+######################################################
+GEODIRECTORY ADMIN BAR
+######################################################
+*/
+.geodirf-ab {
+	background-color: #222;
+	color: #fff;
+	height: 31px;
+}
+.geodirf-ab .widget-title {
+	display:none;
+}
+.geodirf-ab-wrap {
+	max-width:1040px;
+	margin:0px auto;
+}
+.geodirf-ab-right, .geodirf-ab-right .geodir_advance_search_widget {
+	float:right;
+}
+.geodirf-ab-left, .geodirf-ab-left .geodir_advance_search_widget {
+	float:left;
+}
+.geodirf-ab-right .geodir-widget ul.blogroll li {
+	float:right;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border:none;
+	padding-left:8px;
+}
+.geodirf-ab-right .geodir-widget ul.blogroll li a {
+	text-decoration:none;
+	color:#fff;
+}
+.geodirf-ab #loginform1 .form_row {
+	display:none;
+}
+.geodirf-ab #loginform1 .form_row.clearfix {
+	display:block;
+}
+.geodirf-ab #loginform1 .form_row.clearfix input {
+	line-height:25px;
+	height:25px;
+	margin-bottom:0px;
+}
+.geodirf-ab-right .geodir-widget ul.blogroll {
+	margin:0px;
+}
+.geodirf-ab .widget {
+	margin:0px;
+	padding:0px;
+}
+.geodirf-ab .geodir_advance_search_widget {
+	width:100%
+}
+.geodirf-ab .geodir_advance_search_widget input[type="text"] {
+	width:36%;
+	float:left;
+	margin-right:1%;
+	background:#fff;
+	border:1px solid #ccc;
+	line-height:25px;
+	height:25px;
+	margin-bottom:0px;
+}
+.geodirf-ab .geodir-loc-bar-in {
+	background:none;
+	border:none;
+	padding:3px;
+}
+.geodirf-ab .geodir_advance_search_widget input[type="button"] {
+	height:25px;
+	line-height:25px;
+}
+.gdf_welcome_login {
+	margin:0px;
+	padding:3px 0px;
+}
+.gdf_welcome_login li {
+	float:left;
+	margin-left:4px;
+}
+.geodirf-ab .el-icon-search-alt {
+	display:none;
+}
+.geodirf-ab .geodir_advance_search_widget:hover #listing_search {
+	display:block;
+}
+.mobile-left, .mobile-right {
+	display:none;
+	font-size:25px;
+	overflow:hidden;
+	text-decoration:none;
+}
+.mobile-left {
+	float:left;
+	margin:10px 0 0 10px
+}
+.mobile-right {
+	float:right;
+	margin:10px 10px 0 0
+}
+#mobile-navigation-right {
+	display:none;
+}
+#mobile-navigation-right input[type="text"], #mobile-navigation-right input[type="password"] {
+	background-color:#ffffff;
+}
+/*
+######################################################
+HEADER RIGHT WIDGET AREA
+######################################################
+*/
+.header-right-area .gdf_welcome_login_wrap {
+	width:100%;
+	float:left;
+}
+.header-right-area .gdf_welcome_login {
+	float:right;
+	padding-right:10px;
+}
+/*********************
+  GENERAL STYLES
+  *********************/
+
+  /*********************
+  HEADER STYLES
+  *********************/
+  .site-logo {
+	float:left;
+	width:500px;
+}
+.header-right-area {
+	float:right;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background:#eaedf2;
+}
+.header-right-area .widget {
+	margin:0px;
+	padding:0px;
+}
+.header-right-area .geodir_advance_search_widget {
+	width:400px;
+}
+.header-right-area .geodir_advance_search_widget input[type="text"] {
+	width:36%;
+	float:left;
+	margin-right:1%;
+	background:#fff;
+	border:1px solid #ccc;
+	line-height:36px;
+	height:36px;
+}
+.header-right-area .geodir-loc-bar-in {
+	background:none;
+	border:none;
+}
+/*********************
+  NAVIGATION STYLES
+  *********************/
+  
+
+
+  header nav {
+	float:left;
+	width:100%;
+}
+.nav {
+	border: 0;/* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+.nav ul {
+	margin-top: 0;
+}
+.nav li {
+	float: left;
+	position: relative;/*
+      plan your menus and drop-downs wisely.
+      */
+      /* showing sub-menus */ }
+.nav li a {
+	border-bottom: 0;/*
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
+.nav li a:hover, .nav li a:focus {
+	color: white;
+	text-decoration: underline;
+}
+.nav li ul.sub-menu,  .nav li ul.children {
+	margin-top: 0;
+	/*border: 1px solid #ccc;*/
+	border-width:1px;
+	border-style:solid;
+	border-top: 0;
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 8999;
+	transition:visibility 0.1s linear;
+/* highlight sub-menu current page */ }
+
+
+/* ######################################
+########## SUB SUB MENU SUPPORT #########
+######################################## */
+.nav li ul.sub-menu li ul.sub-menu {
+	margin-top: 0;
+	/*border: 1px solid #ccc;*/
+	border-width:1px;
+	border-style:solid;
+	border-top: 0;
+	position: absolute;
+	overflow: hidden;
+	visibility: hidden;
+	z-index: 8999;
+	margin-left: 180px;
+	margin-top: -48px;
+/* highlight sub-menu current page */ }
+
+.nav li ul.sub-menu li:hover ul {
+	top: auto;
+	overflow: visible;
+	visibility: visible;
+}
+.nav li ul.sub-menu li ul.sub-menu li a,  .nav li ul.children li ul.children li a {
+	/*padding-left: 10px;
+	border-right: 0;
+	display: block;
+	width: 180px;*/
+	border-bottom: 1px solid #ccc;
+}
+.nav li ul.sub-menu li ul.sub-menu li:last-child a,  .nav li ul.children li ul.children li:last-child a {
+	border-bottom: 0;
+}
+/* ######################################
+########## SUB SUB MENU SUPPORT END #########
+######################################## */
+.nav li ul.sub-menu li,  .nav li ul.children li {
+/*
+          if you need to go deeper, go nuts
+          just remember deeper menus suck
+          for usability. k, bai.
+          */ }
+.nav li ul.sub-menu li a,  .nav li ul.children li a {
+	padding-left: 10px;
+	border-right: 0;
+	display: block;
+	width: 180px;
+	border-bottom: 1px solid #ccc;
+}
+.nav li ul.sub-menu li:last-child a,  .nav li ul.children li:last-child a {
+	border-bottom: 0;
+}
+.nav li:hover ul {
+	top: auto;
+	overflow: visible;
+	visibility: visible;
+}
+.top-nav .sub-menu {
+	/*background-color:#444;*/
+}
+.footer-nav .sub-menu {
+	display:none;
+}
+
+
+.nav li.gd-edge ul{right:0;}
+.nav li.gd-edge ul.sub-menu li ul.sub-menu{margin-left:0px;margin-right:180px;}
+
+
+/* end .nav */
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+ 
+
+.geodir-sidebar-wrap .widget .widget-title {
+	border-bottom: 2px solid #444;
+	margin-bottom: 0.75em;
+}
+.widget {
+	padding: 0 10px;
+	margin: 2.2em 0;
+}
+.widget ul li {
+	margin-bottom: 0.75em;
+/* deep nesting */ }
+.widget ul li ul {
+	margin-top: 0.75em;
+	padding-left: 1em;
+}
+/*********************
+IMPORTING MODULES
+Modules are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+I mean, you can do whatever you want. The world is your oyster. Unless
+you hate oysters, then the world is your peanut butter & jelly sandwich.
+*********************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Alert Styles
+
+If you want to use these alerts in your design, you can. If not,
+you can just remove this stylesheet.
+
+******************************************************************/
+.alert-help, .alert-info, .alert-error, .alert-success {
+	margin: 10px;
+	padding: 5px 18px;
+	border: 1px solid;
+}
+.alert-help {
+	border-color: #e8dc59;
+	background: #ebe16f;
+}
+.alert-info {
+	border-color: #bfe4f4;
+	background: #d5edf8;
+}
+.alert-error {
+	border-color: #f8cdce;
+	background: #fbe3e4;
+}
+.alert-success {
+	border-color: #deeaae;
+	background: #e6efc2;
+}
+/*********************
+BUTTON DEFAULTS
+We're gonna use a placeholder selector here
+so we can use common styles. We then use this
+to load up the defaults in all our buttons.
+
+Here's a quick video to show how it works:
+http://www.youtube.com/watch?v=hwdVpKiJzac
+
+*********************/
+.geodir_button, .geodir_submit_search, .blue-btn, .comment-reply-link, #submit, button, input[type="button"], input[type="submit"], #simplemodal-container .button,.showFilters {
+	height:35px;
+	display: inline-block;
+	position: relative;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	line-height: 34px;
+	font-weight: normal;
+	padding: 0 24px;
+	border-radius: 4px;
+	border: 0;
+	cursor: pointer;
+	-webkit-transition: background-color 0.14s ease-in-out;
+	transition: background-color 0.14s ease-in-out;
+	background-image:none;
+}
+.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus,.showFilters:hover {
+	color: white;
+	text-decoration: none;
+	background-image:none;
+}
+.blue-btn:active, .comment-reply-link:active, #submit:active {
+	top: 1px;
+}
+/*
+An example button.
+You can use this example if you want. Just replace all the variables
+and it will create a button dependant on those variables.
+*/
+.geodir_button, .geodir_submit_search, .blue-btn, .comment-reply-link, #submit, button, input[type="button"], input[type="submit"], #simplemodal-container .button, .showFilters {
+	/*background-color: #f47a20;*/
+}
+.geodir_button:hover, .geodir_submit_search:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, button:focus, input[type="button"]:focus, input[type="submit"]:focus, #simplemodal-container .button:focus, .showFilters:focus {
+	/*background-color: #faa51a;*/
+}
+.geodir_button:active, .geodir_submit_search:active, .blue-btn:active, .comment-reply-link:active, #submit:active, button:active, input[type="button"]:active, input[type="submit"]:active, #simplemodal-container .button:active, .showFilters:active {
+	/*background-color: #faa51a;*/
+}
+.geodir_button:hover, .geodir_submit_search:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover, #simplemodal-container .button:hover, .showFilters:hover {
+	/*background-color: #faa51a;*/
+}
+.geodir_button {
+	font-size:14px;
+}
+/*********************
+INPUTS
+*********************/
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .field {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px;
+	margin-bottom: 14px;
+	font-size: 1em;
+	color: #5c6b80;
+	border-radius: 3px;
+	vertical-align: middle;
+	box-shadow: none;
+	border: 0;
+	width: 100%;
+	max-width: 400px;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #eaedf2;
+	-webkit-transition: background-color 0.24s ease-in-out;
+	transition: background-color 0.24s ease-in-out;
+}
+input[type="text"]:focus, input[type="text"]:active,  input[type="password"]:focus,  input[type="password"]:active,  input[type="datetime"]:focus,  input[type="datetime"]:active,  input[type="datetime-local"]:focus,  input[type="datetime-local"]:active,  input[type="date"]:focus,  input[type="date"]:active,  input[type="month"]:focus,  input[type="month"]:active,  input[type="time"]:focus,  input[type="time"]:active,  input[type="week"]:focus,  input[type="week"]:active,  input[type="number"]:focus,  input[type="number"]:active,  input[type="email"]:focus,  input[type="email"]:active,  input[type="url"]:focus,  input[type="url"]:active,  input[type="search"]:focus,  input[type="search"]:active,  input[type="tel"]:focus,  input[type="tel"]:active,  input[type="color"]:focus,  input[type="color"]:active,  select:focus,  select:active,  textarea:focus,  textarea:active,  .field:focus,  .field:active {
+	background-color: #f7f8fa;
+}
+input[type="text"].error, input[type="text"].is-invalid,  input[type="password"].error,  input[type="password"].is-invalid,  input[type="datetime"].error,  input[type="datetime"].is-invalid,  input[type="datetime-local"].error,  input[type="datetime-local"].is-invalid,  input[type="date"].error,  input[type="date"].is-invalid,  input[type="month"].error,  input[type="month"].is-invalid,  input[type="time"].error,  input[type="time"].is-invalid,  input[type="week"].error,  input[type="week"].is-invalid,  input[type="number"].error,  input[type="number"].is-invalid,  input[type="email"].error,  input[type="email"].is-invalid,  input[type="url"].error,  input[type="url"].is-invalid,  input[type="search"].error,  input[type="search"].is-invalid,  input[type="tel"].error,  input[type="tel"].is-invalid,  input[type="color"].error,  input[type="color"].is-invalid,  select.error,  select.is-invalid,  textarea.error,  textarea.is-invalid,  .field.error,  .field.is-invalid {
+	/*color: #fbe3e4;*/
+    border-color: #fbe3e4;
+	background-color: #fbe3e4;
+	background-position: 99% center;
+	background-repeat: no-repeat;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
+	outline-color: #fbe3e4;
+}
+input[type="text"].success, input[type="text"].is-valid,  input[type="password"].success,  input[type="password"].is-valid,  input[type="datetime"].success,  input[type="datetime"].is-valid,  input[type="datetime-local"].success,  input[type="datetime-local"].is-valid,  input[type="date"].success,  input[type="date"].is-valid,  input[type="month"].success,  input[type="month"].is-valid,  input[type="time"].success,  input[type="time"].is-valid,  input[type="week"].success,  input[type="week"].is-valid,  input[type="number"].success,  input[type="number"].is-valid,  input[type="email"].success,  input[type="email"].is-valid,  input[type="url"].success,  input[type="url"].is-valid,  input[type="search"].success,  input[type="search"].is-valid,  input[type="tel"].success,  input[type="tel"].is-valid,  input[type="color"].success,  input[type="color"].is-valid,  select.success,  select.is-valid,  textarea.success,  textarea.is-valid,  .field.success,  .field.is-valid {
+	color: #e6efc2;
+	border-color: #e6efc2;
+	background-color: white;
+	background-position: 99% center;
+	background-repeat: no-repeat;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
+	outline-color: #e6efc2;
+}
+input[type="text"][disabled], input[type="text"].is-disabled,  input[type="password"][disabled],  input[type="password"].is-disabled,  input[type="datetime"][disabled],  input[type="datetime"].is-disabled,  input[type="datetime-local"][disabled],  input[type="datetime-local"].is-disabled,  input[type="date"][disabled],  input[type="date"].is-disabled,  input[type="month"][disabled],  input[type="month"].is-disabled,  input[type="time"][disabled],  input[type="time"].is-disabled,  input[type="week"][disabled],  input[type="week"].is-disabled,  input[type="number"][disabled],  input[type="number"].is-disabled,  input[type="email"][disabled],  input[type="email"].is-disabled,  input[type="url"][disabled],  input[type="url"].is-disabled,  input[type="search"][disabled],  input[type="search"].is-disabled,  input[type="tel"][disabled],  input[type="tel"].is-disabled,  input[type="color"][disabled],  input[type="color"].is-disabled,  select[disabled],  select.is-disabled,  textarea[disabled],  textarea.is-disabled,  .field[disabled],  .field.is-disabled {
+	cursor: not-allowed;
+	border-color: #cfcfcf;
+	opacity: 0.6;
+}
+input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active,  input[type="password"][disabled]:focus,  input[type="password"][disabled]:active,  input[type="password"].is-disabled:focus,  input[type="password"].is-disabled:active,  input[type="datetime"][disabled]:focus,  input[type="datetime"][disabled]:active,  input[type="datetime"].is-disabled:focus,  input[type="datetime"].is-disabled:active,  input[type="datetime-local"][disabled]:focus,  input[type="datetime-local"][disabled]:active,  input[type="datetime-local"].is-disabled:focus,  input[type="datetime-local"].is-disabled:active,  input[type="date"][disabled]:focus,  input[type="date"][disabled]:active,  input[type="date"].is-disabled:focus,  input[type="date"].is-disabled:active,  input[type="month"][disabled]:focus,  input[type="month"][disabled]:active,  input[type="month"].is-disabled:focus,  input[type="month"].is-disabled:active,  input[type="time"][disabled]:focus,  input[type="time"][disabled]:active,  input[type="time"].is-disabled:focus,  input[type="time"].is-disabled:active,  input[type="week"][disabled]:focus,  input[type="week"][disabled]:active,  input[type="week"].is-disabled:focus,  input[type="week"].is-disabled:active,  input[type="number"][disabled]:focus,  input[type="number"][disabled]:active,  input[type="number"].is-disabled:focus,  input[type="number"].is-disabled:active,  input[type="email"][disabled]:focus,  input[type="email"][disabled]:active,  input[type="email"].is-disabled:focus,  input[type="email"].is-disabled:active,  input[type="url"][disabled]:focus,  input[type="url"][disabled]:active,  input[type="url"].is-disabled:focus,  input[type="url"].is-disabled:active,  input[type="search"][disabled]:focus,  input[type="search"][disabled]:active,  input[type="search"].is-disabled:focus,  input[type="search"].is-disabled:active,  input[type="tel"][disabled]:focus,  input[type="tel"][disabled]:active,  input[type="tel"].is-disabled:focus,  input[type="tel"].is-disabled:active,  input[type="color"][disabled]:focus,  input[type="color"][disabled]:active,  input[type="color"].is-disabled:focus,  input[type="color"].is-disabled:active,  select[disabled]:focus,  select[disabled]:active,  select.is-disabled:focus,  select.is-disabled:active,  textarea[disabled]:focus,  textarea[disabled]:active,  textarea.is-disabled:focus,  textarea.is-disabled:active,  .field[disabled]:focus,  .field[disabled]:active,  .field.is-disabled:focus,  .field.is-disabled:active {
+	background-color: #d5edf8;
+}
+textarea {
+	max-width: 100%;
+	min-height: 120px;
+	line-height: 1.5em;
+}
+/*********************
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*********************/
+
+/*********************
+GENERAL STYLES
+*********************/
+body {
+	/*
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #5c6b80;
+	background-color: #eaedf2;*/
+	-webkit-font-smoothing: antialiased;
+}
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+
+/*********************
+LINK STYLES
+*********************/
+a, a:visited {
+	/*color: #f01d4f;*//* on hover */
+  /* on click */
+  /* mobile tap color */ }
+a:hover, a:focus, a:visited:hover, a:visited:focus {
+	/*color: #d10e3c;*/
+}
+a:link, a:visited:link {
+	/*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: 500;/*
+  if you're going to use webfonts, be sure to check your weights
+  http://css-tricks.com/watch-your-font-weight/
+  */
+  /* removing text decoration from all headline links */ }
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+	text-decoration: none;
+}
+h1, .h1 {
+	/*font-size: 2.5em;
+	line-height: 1.333em;*/
+}
+h2, .h2 {
+	/*font-size: 1.75em;
+	line-height: 1.4em;*/
+	margin-bottom: 0.375em;
+}
+h3, .h3 {
+	/*font-size: 1.125em;*/
+}
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+/*********************
+HEADER STYLES
+*********************/
+.header {
+	/*background-color: #323944;*/
+}
+#logo {
+	margin: 0.75em 0;
+}
+#logo a {
+	color: white;
+}
+/*********************
+NAVIGATION STYLES
+*********************/
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+.nav {
+	border-bottom: 0;
+	margin: 0;/* end .menu li */
+  /* highlight current page */
+  /* end current highlighters */ }
+.nav li {
+ }
+.nav li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 0.75em; }
+.nav li ul.sub-menu li a,  .nav li ul.children li a {
+	padding-left: 30px;
+}
+/* end .nav */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+#content {
+	margin-top: 1.5em;
+}
+.geodir-onethird, #geodir_content, #gd-sidebar-wrapper {
+	/*background-color: white;*/
+	border-radius: 3px;
+	margin-bottom: 1.5em;
+	border: 1px solid #cccccc;
+}
+.hentry header {
+	border-bottom: 1px solid #f8f9fa;
+	padding: 1.5em;
+}
+.hentry footer {
+	padding: 1.5em;
+	border-top: 1px solid #f8f9fa;
+}
+.hentry footer p {
+	margin: 0;
+}
+/* end .hentry */
+.single-title, .page-title, .entry-title {
+	margin: 0;
+}
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+/* post meta */
+.byline {
+	color: #9fa6b4;
+	font-style: italic;
+	margin: 0;
+}
+/* entry content */
+.entry-content {
+	padding: 1.5em 1.5em 0;/*
+  image alignment on a screen this size may be
+  a bit difficult. It's set to start aligning
+  and floating images at the next breakpoint,
+  but it's up to you. Feel free to change it up.
+  */ }
+.entry-content p {
+	margin: 0 0 1.5em;
+}
+.entry-content table {
+	width: 100%;
+	border: 1px solid #eaedf2;
+	margin-bottom: 1.5em;
+}
+.entry-content table caption {
+	margin: 0 0 7px;
+	font-size: 0.75em;
+	color: #9fa6b4;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.entry-content tr {
+	border-bottom: 1px solid #eaedf2;
+}
+ .entry-content tr:nth-child(even) {
+ background-color: #f8f9fa;
+}
+.entry-content td {
+	padding: 7px;
+	border-right: 1px solid #eaedf2;
+}
+.entry-content td:last-child {
+	border-right: 0;
+}
+.entry-content th {
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #eaedf2;
+	border-right: 1px solid #eaedf2;
+}
+.entry-content th:last-child {
+	border-right: 0;
+}
+.entry-content blockquote {
+	margin: 0 0 1.5em 0.75em;
+	padding: 0 0 0 0.75em;
+	border-left: 3px solid #2980b9;
+	font-style: italic;
+	color: #9fa6b4;
+}
+.entry-content dd {
+	margin-left: 0;
+	font-size: 0.9em;
+	color: #787878;
+	margin-bottom: 1.5em;
+}
+.entry-content > img {
+	margin: 0 0 1.5em 0;
+	max-width: 100%;
+	height: auto;
+}
+.entry-content .size-auto,  .entry-content .size-full,  .entry-content .size-large,  .entry-content .size-medium,  .entry-content .size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+.entry-content pre {
+	background: #323944;
+	color: #f8f9fa;
+	font-size: 0.9em;
+	padding: 1.5em;
+	margin: 0 0 1.5em;
+	border-radius: 3px;
+}
+/* end .entry-content */
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+/* images inside wp-caption */ }
+.wp-caption img {
+	max-width: 100%;
+	margin-bottom: 0;
+	width: 100%;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 0.85em;
+	margin: 4px 0 7px;
+	text-align: center;
+}
+/* end .wp-caption */
+/* image gallery styles */
+/* end .gallery */
+/* gallery caption styles */
+.tags {
+	margin: 0;
+}
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+.pagination, .wp-prev-next {
+	margin: 1.5em 0;
+}
+.pagination {
+	text-align: center;
+}
+.pagination ul {
+	display: inline-block;
+	background-color: white;
+	white-space: nowrap;
+	padding: 0;
+	clear: both;
+	border-radius: 3px;
+}
+.pagination li {
+	padding: 0;
+	margin: 0;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	border-right: 1px solid #eaedf2;
+}
+.pagination a, .pagination span {
+	margin: 0;
+	text-decoration: none;
+	padding: 0;
+	line-height: 1em;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 0.75em;
+	min-width: 1em;
+	display: block;
+	color: #2980b9;
+}
+.pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
+	background-color: #2980b9;
+	color: white;
+}
+.pagination .current {
+	cursor: default;
+	color: #5c6b80;
+}
+.pagination .current:hover, .pagination .current:focus {
+	background-color: white;
+	color: #5c6b80;
+}
+/* end .geodirf_page_navi */
+/* fallback previous & next links */
+.wp-prev-next .prev-link {
+	float: left;
+}
+.wp-prev-next .next-link {
+	float: right;
+}
+/* end .wp-prev-next */
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+#comments-title {
+	padding: 0.75em;
+	margin: 0;
+	border-top: 1px solid #f8f9fa;
+/* number of comments span */ }
+.commentlist {
+	margin: 0;
+	list-style-type: none;
+}
+.comment {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	padding: 1.5em;
+	border-bottom: 1px solid #f8f9fa;/* vcard */
+  /* end .commentlist .vcard */
+  /* end children */
+  /* general comment classes */ }
+.comment .comment-author {
+	padding: 7px;
+	border: 0;
+}
+.comment .vcard {
+	margin-left: 50px;
+}
+.comment .vcard cite.fn {
+	font-weight: 700;
+	font-style: normal;
+}
+.comment .vcard time {
+	display: block;
+	font-size: 0.9em;
+	font-style: italic;
+}
+.comment .vcard time a {
+	color: #9fa6b4;
+	text-decoration: none;
+}
+.comment .vcard time a:hover {
+	text-decoration: underline;
+}
+.comment .vcard .avatar {
+	position: absolute;
+	left: 16px;
+	border-radius: 50%;
+}
+.comment:last-child {
+	margin-bottom: 0;
+}
+.comment .children {
+	margin: 0;/* variations */
+    /* change number for different depth */ }
+ .comment[class*=depth-] {
+ margin-top: 1.1em;
+}
+.comment.depth-1 {
+	margin-left: 0;
+	margin-top: 0;
+}
+ .comment:not(.depth-1) {
+ margin-top: 0;
+ margin-left: 7px;
+ padding: 7px;
+}
+.comment.odd {
+	background-color: white;
+}
+.comment.even {
+	background: #f8f9fa;
+}
+/* comment meta */
+/* comment content */
+.comment_content p {
+	margin: 0.7335em 0 1.5em;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+/* end .commentlist .comment_content */
+/* comment reply link */
+.comment-reply-link {
+	font-size: 0.9em;
+	float: right;
+}
+/* end .commentlist .comment-reply-link */
+/* edit comment link */
+.comment-edit-link {
+	font-style: italic;
+	margin: 0 7px;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+.comment-respond {
+	padding: 1.5em;
+	border-top: 1px solid #f8f9fa;
+}
+#reply-title {
+	margin: 0;
+}
+.logged-in-as {
+	color: #9fa6b4;
+	font-style: italic;
+	margin: 0;
+}
+.logged-in-as a {
+	color: #5c6b80;
+}
+.comment-form-comment {
+	margin: 1.5em 0 0.75em;
+}
+.form-allowed-tags {
+	padding: 1.5em;
+	background-color: #f8f9fa;
+	font-size: 0.9em;
+}
+/* comment submit button */
+#submit {
+	float: right;
+	font-size: 1em;
+}
+/* comment form title */
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
+/* cancel comment reply link */
+/* logged in comments */
+/* allowed tags */
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
+/* no comments */
+.nocomments {
+	margin: 0 20px 1.1em;
+}
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.widget ul li {
+/* deep nesting */ }
+.no-widgets {
+	background-color: white;
+	padding: 1.5em;
+	text-align: center;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	margin-bottom: 1.5em;
+}
+#geodir_content .geodir_list_heading {
+	margin-top:-11px;
+}
+.geodir_list_heading {
+	margin-left: -10px;
+	margin-right: -10px;
+	padding: 0px 10px;
+	background: none repeat scroll 0 0 #F7F7F7;
+	border-top: 1px #D3D0D0 solid;
+	border-bottom: 1px #D3D0D0 solid;
+	margin-bottom: 5px;
+}
+.geodir_list_heading h3 {
+	margin:8px 0px;
+	font-size:16px;
+
+}
+.widget .geodir_list_heading h3 {
+	border-bottom: none;
+	margin-bottom: 8px;	
+}
+.geodir_list_heading a{
+	font-size:13px;
+}
+
+.ageodir_content .geodir-widget {
+	padding: 0 10px;
+	margin-top:-1px; /* This is to stop double border at the top*/
+}
+.geodir-widget {
+	margin-top:-1px; /* This is to stop double border at the top*/
+}
+
+#geodir_content .geodir_popular_post_view{padding:0px;}
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	clear: both;
+	/*background-color: #323944;
+	color: #f8f9fa;*/
+}
+
+
+/*
+#################################################
+STANDARD GDF OPTIONS STYLES
+#################################################
+*/
+header nav{-webkit-border-top-left-radius: 2px;-webkit-border-top-right-radius: 2px;-moz-border-radius-topleft: 2px;-moz-border-radius-topright: 2px;border-top-left-radius: 2px;border-top-right-radius: 2px;} header nav ul li:first-child a{padding-left:0px;}  @media only screen and (min-width: 1040px){ .wrap, .geodir-common,.geodir-breadcrumb, #geodir_wrapper .geodir_full_page .geodir-search, #geodir_wrapper .term_description{width:1040px;}}.site-logo{margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;}h1.site-title a,h1.site-title a:hover{color:#FFFFFF;font-size:40px;font-family:Arial, Helvetica, sans-serif;font-weight:400;line-height:32px;}h2.site-description{color:#FFFFFF;font-size:28px;font-family:Arial, Helvetica, sans-serif;font-weight:400;line-height:22px;}.header{background-color:#323944;}header nav .nav li a,header nav .nav li a:hover{color:#FFFFFF;font-size:16px;font-weight:400;line-height:24px;}.top-nav .sub-menu{background-color:#323944;}.nav li ul.sub-menu,
+.nav li ul.children,.nav li ul.sub-menu li a,.nav li ul.sub-menu li ul.sub-menu li a, .nav li ul.children li a{border-color:#ccc;}header nav{border-top:inherit solid inherit;border-right:inherit solid inherit;border-bottom:inherit solid inherit;border-left:inherit solid inherit;}header nav .nav li{border-top:inherit inherit inherit;border-right:inherit inherit inherit;border-bottom:inherit inherit inherit;border-left:inherit inherit inherit;}body{background-color:#eaedf2;}.geodir-onethird,#geodir_content{background-color:#FFFFFF;}.geodir-content-right,.geodir-content-left,.gd-third-left,.gd-third-right,#gd-sidebar-wrapper{background-color:#FFFFFF;}.geodir_button, .geodir_submit_search, .blue-btn, .comment-reply-link, #submit, button, input[type="button"], input[type="submit"],#simplemodal-container .button,#geodir_wrapper #showFilters{background-color:#f47a20;}.geodir_button:hover, .geodir_submit_search:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, button:focus, input[type="button"]:focus, input[type="submit"]:focus,#simplemodal-container .button:focus,.geodir_button:active, .geodir_submit_search:active, .blue-btn:active, .comment-reply-link:active, #submit:active, button:active, input[type="button"]:active, input[type="submit"]:active,#simplemodal-container .button:active,.geodir_button:hover, .geodir_submit_search:hover, .blue-btn:hover, .comment-reply-link:hover, #submit:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover,#simplemodal-container .button:hover,#geodir_wrapper #showFilters:hover, #geodir_wrapper #showFilters:focus,#geodir_wrapper  #showFilters:active{background-color:#faa51a;}body,#geodir_wrapper .geodir-common p,.entry-content p,.hreview-aggregate span{color:#757575;font-size:14px;font-family:Arial, Helvetica, sans-serif;font-weight:400;line-height:22px;}a,.geodir_link_span, .geodir-more-contant li a span.geodir_link_span, #geodir_wrapper #geodir-category-list a span.geodir_link_span{color:#f01d4f;}a:hover{color:#d10e3c;}a:active{color:#d10e3c;}a:visited{color:#f01d4f;}h1{color:#8b8b8b;font-size:25px;font-family:Arial, Helvetica, sans-serif;font-weight:400;line-height:21px;}h2{color:#8b8b8b;font-size:28px;font-family:Arial, Helvetica, sans-serif;font-weight:400;line-height:22px;}h3,#simplemodal-container h3{color:#8b8b8b;font-size:18px;font-family:Arial, Helvetica, sans-serif;font-weight:400;line-height:24px;}.footer{background-color:#323944;}.footer, .footer a, .footer a:focus, .footer a:hover,.footer .nav li a, .footer .nav li a:focus, .footer .nav li a:hover{color:#FFFFFF;}
+
+/* this rule stops the submenu items apearing behind main menu items if the menu is on two lines */
+header nav ul li:nth-child(2){z-index: 1499;}header nav ul li:nth-child(3){z-index: 1498;}header nav ul li:nth-child(4){z-index: 1497;}
+header nav ul li:nth-child(5){z-index: 1496;}header nav ul li:nth-child(6){z-index: 1495;}header nav ul li:nth-child(7){z-index: 1494;}
+header nav ul li:nth-child(8){z-index: 1493;}header nav ul li:nth-child(9){z-index: 1492;}header nav ul li:nth-child(10){z-index: 1491;}
+header nav ul li:nth-child(11){z-index: 1490;}header nav ul li:nth-child(12){z-index: 1489;}header nav ul li:nth-child(13){z-index: 1488;}
+header nav ul li:nth-child(14){z-index: 1487;}header nav ul li:nth-child(15){z-index: 1486;}header nav ul li:nth-child(16){z-index: 1485;}
+
+
+
+/*
+#################################################
+ADVANCED SEARCH FILTERS 
+#################################################
+*/
+.geodir_advance_search .showFilters{width:100%;padding-left: 0px;padding-right: 0px;text-align: center;font-size: 16px;}
+@media only screen and (min-width: 1040px)
+{
+.geodir_advance_search .geodir_full_page .geodir-search input[type="text"]{width:33%;}
+.geodir_advance_search .geodir_full_page .geodir-search .geodir_submit_search{width:15.5%;font-size:16px;}
+.geodir_advance_search .geodir_full_page .showFilters{width:15%;padding-left: 0px;padding-right: 0px;text-align: center;margin-left:1%;font-size: 16px;}
+
+}
+
+/*
+#################################################
+CUSTOM POST TYPES
+#################################################
+*/
+@media only screen and (min-width: 1040px)
+{
+.geodir_custom_posts .geodir_full_page .geodir-search input[type="text"]{width:33%;}
+.geodir_custom_posts .geodir_full_page .geodir-search .geodir_submit_search{width:15.5%;font-size:16px;}
+.geodir_custom_posts .showFilters{height:38px;width:100%;padding-left: 0px;padding-right: 0px;text-align: center;}
+.geodir_custom_posts .geodir-search select{width:15.5%;margin-left: 0px;margin-right: 1%;}
+.geodir_custom_posts .geodir-content-right .geodir-search select{width:100%;margin: 5px;}
+.geodir_custom_posts .geodir-content-left .geodir-search select{width:100%;margin: 5px;}
+}
+
+
+/*
+#################################################
+ADVANCED SEARCH FILTERS && CUSTOM POST TYPES
+#################################################
+*/
+@media only screen and (min-width: 1040px)
+{
+.geodir_advance_search.geodir_custom_posts .geodir_full_page .geodir-search input[type="text"]{width:27.5%;}
+.geodir_advance_search.geodir_custom_posts .geodir_full_page .geodir-search .geodir_submit_search{width:15.5%;font-size:16px;}
+.geodir_advance_search.geodir_custom_posts .geodir_full_page .showFilters{width:15%;padding-left: 0px;padding-right: 0px;text-align: center;margin-left: 1%;font-size:16px;}
+.geodir_advance_search.geodir_custom_posts .geodir_full_page .geodir-search select{width:10%;margin-left: 0px;margin-right: 1%;}
+}
+
+/*
+#################################################
+LOCATION MANAGER ADDON
+#################################################
+*/
+ul li.gd-location-switcher a {
+background-position:-1px 15px;
+padding-left:15px;
+}
+#mm-mobile-navigation-left ul li.gd-location-switcher a{
+	background-position:0px 11px;
+}
+#mm-mobile-navigation-left ul li.gd-location-switcher a:first-child{background-image:none;}
+#mm-mobile-navigation-left dd a {
+width: 100%;
+margin: 0px;
+padding: 7px;
+float: left;
+margin-bottom: 8px;
+}
+#mm-mobile-navigation-left dd {
+width: 33%;
+}
+#mm-mobile-navigation-left  .geodir-chosen-container .chosen-results li.active-result {color:#444;}
+#mm-mobile-navigation-left  .geodir-chosen-container .chosen-results li.highlighted{color:#FFF;}
+
+/*
+#################################################
+BUDDYPRESS
+#################################################
+*/
+.hentry .gdbp-wrapper-content header,
+.hentry .gdbp-wrapper-content footer  {
+    border-bottom: 0 none;
+    padding: 0;
+}
+
+/* LISTING GRID WIDTHS 
+.geodir_category_list_view li.gridview_onefifth{ width: -webkit-calc(20% - 2.5px);width: -moz-calc(20% - 2.5px);width: calc(20% - 2.5px);}
+
+.geodir_category_list_view li.gridview_onefourth{ width: -webkit-calc(25% - 2.5px);width: -moz-calc(25% - 2.5px);width: calc(25% - 2.5px);}
+
+.geodir_category_list_view li.gridview_onethird{ width: -webkit-calc(33.3% - 2px);width: -moz-calc(33.3% - 2px);width: calc(33.3% - 2px);}
+
+.geodir_category_list_view li.gridview_onehalf{ width: -webkit-calc(50% - 2px);width: -moz-calc(50% - 2px);width: calc(50% - 2px);}
+*/
+/*********************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*********************/
+@media print {
+
+  * {
+	background: transparent !important;
+	color: black !important;
+	text-shadow: none !important;
+	filter: none !important;
+	-ms-filter: none !important;
+}
+a, a:visited {
+	color: #444 !important;
+	text-decoration: underline;
+}
+a:after, a:visited:after {
+	content: " (" attr(href) ")";
+}
+a abbr[title]:after, a:visited abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+ .ir a:after,  a[href^="javascript:"]:after,  a[href^="#"]:after {
+ content: "";
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+thead {
+	display: table-header-group;
+}
+tr, img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+ @page {
+ margin: 0.5cm;
+}
+p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+}
+h2,  h3 {
+	page-break-after: avoid;
+}
+.sidebar,  .page-navigation,  .wp-prev-next,  .respond-form,  nav {
+	display: none;
+}
+}
+
+
+
+/*
+#################################################
+GEODIRECTORY MEDIA QUERIES
+#################################################
+*/
+
+
+
+@media only screen and (max-width: 1040px)
+{ 
+  .geodir_category_grid_view li.gridview_onethird, 
+  .geodir_category_grid_view li.gridview_onehalf, 
+  .geodir_category_grid_view li.gridview_onefifth{ width: -webkit-calc(50% - 14px);width: -moz-calc(50% - 14px);width: calc(50% - 14px);}
+  #gd-sidebar-wrapper .geodir_category_grid_view li.gridview_onehalf,
+  .geodir-content-left .geodir_category_grid_view li.gridview_onehalf,
+  .geodir-content-right .geodir_category_grid_view li.gridview_onehalf{width: -webkit-calc(50% - 14px);width: -moz-calc(50% - 14px);width: calc(50% - 14px);}
+  #gd-sidebar-wrapper .likethis{ width:auto;}
+  .stick_trigger_container .geodir_map_container, 
+  .stick_trigger_container .geodir_map_container .map_background .main_map_wrapper,
+  .stick_trigger_container .geodir_map_container .map_background .main_map_wrapper .geodir_marker_cluster,
+  .stick_trigger_container .geodir_map_container .map_background .main_map_wrapper .loading_div{width:100%!important;}
+  .geodir_category_grid_view li span.geodir-rating{padding-left:0px;}
+  dl.geodir-tab-head dd{width:100%;}
+  dl.geodir-tab-head {margin: 0px; display: table; width: 100%; border-right: 1px solid #e1e1e1; }
+  .geodir-breadcrumb {width:100%;}
+  h1, .geodir-breadcrumb, .geodir_full_page .geodir-search, .term_description{width:100%;}
+  .geodir_full_page .geodir-search .geodir_submit_search{width:25%;}
+  .geodir_full_page .geodir-search input[type="text"]{width:35%;}
+  .wrap, .geodir-common {width: 96%} 
+/*
+#################################################
+ADVANCED SEARCH FILTERS 
+#################################################
+*/
+  .geodir_advance_search .geodir_full_page .geodir-search input[type="text"],
+  .geodir_advance_search .showFilters,
+  .geodir_advance_search .geodir_full_page .geodir-search .geodir_submit_search{width:49%;}
+  .geodir_advance_search .geodir_full_page .showFilters{width:49%;text-align: center;margin-right:1%;}
+  .geodir_advance_search .geodir_full_page .geodir-search .geodir_submit_search{margin-right:1%;}
+/*
+#################################################
+CUSTOM POST TYPES
+#################################################
+*/
+.geodir_custom_posts .geodir_full_page .geodir-search input[type="text"]{width:49%;}
+.geodir_custom_posts .geodir_full_page .geodir-search .geodir_submit_search{width:49%;}
+.geodir_custom_posts .showFilters{width:49%;padding-left: 0px;padding-right: 0px;text-align: center;margin-left: 1%;}
+.geodir_custom_posts .geodir-search select{width:49%;margin-left: 0px;margin-right: 1%;max-width:100%;}
+/*
+#################################################
+ADVANCED SEARCH FILTERS && CUSTOM POST TYPES
+#################################################
+*/
+.geodir_advance_search.geodir_custom_posts .showFilters{width:99%;margin-left: 0%;}
+}
+@media only screen and (max-width: 960px)
+{
+  .header-right-area,
+  .header-right-area .geodir_advance_search_widget{width:100%;}
+  .header-right-area .geodir_advance_search_widget input[type="text"]{width:38%;}
+  .header-right-area .geodir_advance_search_widget input[type="button"]{width:20%;}
+  .site-logo{width:100%;}
+  
+  .geodirf-ab {display:none;}
+}
+
+@media only screen and (max-width: 860px)
+{
+  /*#geodir_content {padding-left:0px;padding-right:0px;}*/
+  .geodir-cat-list ul li{ width:auto;}
+  #gd-sidebar-wrapper .geodir_category_grid_view li.gridview_onehalf,
+  .geodir-content-left .geodir_category_grid_view li.gridview_onehalf,
+  .geodir-content-right .geodir_category_grid_view li.gridview_onehalf{width:95%;}
+  .geodir_category_grid_view li.gridview_onefourth{width: -webkit-calc(50% - 14px);width: -moz-calc(50% - 14px);width: calc(50% - 14px);}
+  .geodir_category_list_view li .geodir-content{ width:43%;}
+  .widget .geodir_thumbnail,
+  .geodir-content-content .geodir_thumbnail{height:auto!important;}
+  .geodir_category_grid_view li span.geodir-rating{padding-left:4px;}
+  .footer nav{float:none;}
+  .f-col-4{width:50%;}
+}
+
+@media only screen and (max-width: 768px) {
+	#mobile-navigation-left{display:none;}
+	.mobile-left, .mobile-right{display:block;}
+	.f-col-3{width:50%;}
+	#mm-mobile-navigation-left li {width:100%;}
+	#mobile-navigation-right.mm-opened{display:block;}
+}
+
+@media only screen and (max-width: 660px)
+{
+  .geodir_category_grid_view li.gridview_onethird, 
+  .geodir_category_grid_view li.gridview_onehalf, 
+  .geodir_category_grid_view li.gridview_onefourth,
+  .geodir_category_grid_view li.gridview_onefifth,
+  .geodir-content-right .geodir_category_grid_view li.gridview_onehalf{ width: -webkit-calc(50% - 4px);width: -moz-calc(50% - 4px);width: calc(50% - 4px);}
+  #gd-sidebar-wrapper{width:100%;}
+  .geodir-onethird{ float:none; width:auto!important;}
+  #geodir_content{ width:auto!important; float:none;min-width:100%;} 
+  .geodir_category_grid_view, .geodir_category_grid_view li{margin-left:0px;}
+  .geodir_full_page .geodir-search input[type="text"]{width:33%;}
+  .f-col-4,.f-col-3,.f-col-2{width:100%;}
+  .geodir-onethird{margin-left:0px;}
+  #gd-sidebar-wrapper {width:100%;margin-left:0px;}
+
+}
+
+
+@media only screen and (max-width:480px)
+{	
+  .geodir_form_row label{ float:none; width:auto; display:block;}
+  .geodir_form_row .geodir_textfield, .geodir_textarea{ float:none; width:100%; display:block; margin-top:10px;}
+  .geodir_message_note{ padding-left:0;}
+  .geodir_category_list_view li .geodir-content, .geodir_category_list_view li .geodir-post-img, .geodir_category_list_view li .geodir-addinfo{ float:none; width:100%; margin:10px 0;}
+  .geodir_form_row .geodir_textfield,
+  .geodir_textarea,
+  .geodir_form_row select{width:100%;}
+  #gd_placecategory{width:100%!important;}
+  .geodir_form_row .event-single-dateto-inner{width:100%;float:none;}
+  .geodir_full_page .geodir-search .geodir_submit_search{width:96%;margin-left:2%;}
+  .geodir_full_page .geodir-search .showFilters{width:96%;margin-left:2%;}
+  .geodir_full_page .geodir-search input[type="text"]{width:96%;margin-left:2%;}
+  .footer .nav li {width:100%;}
+  .header-right-area .geodir_advance_search_widget input[type="text"]{width:100%;}
+  .header-right-area .geodir_advance_search_widget input[type="button"]{width:100%;}
+  .site-logo{text-align:center;}
+  .map_category label{display:none;}
+  .map_category input[type="checkbox"]{/* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  /* -webkit-transform: scale(2);  Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin-right:8px;}
+  .map_category .main_list img{height:20px;width:auto;}
+  .map_category .main_list li{padding-top:3px;}
+/*
+#################################################
+ADVANCED SEARCH FILTERS 
+#################################################
+*/
+  .geodir_advance_search .geodir_full_page .geodir-search input[type="text"],
+  .geodir_advance_search .geodir_full_page .geodir-search .showFilters,
+  .geodir_advance_search .geodir_full_page .geodir-search .geodir_submit_search{width:96%;margin-left:2%;float:none;}
+  .geodir_advance_search .geodir_full_page .geodir-search .geodir_submit_search{margin-right:1%;}
+/*
+#################################################
+CUSTOM POST TYPES
+#################################################
+*/
+   .geodir_custom_posts .geodir_full_page .geodir-search input[type="text"],
+   .geodir_custom_posts .geodir_full_page .geodir-search .showFilters,
+   .geodir_custom_posts .geodir_full_page .geodir-search .geodir_submit_search,
+  .geodir_custom_posts .geodir_full_page .geodir-search select{width:96%;margin-left:2%;float:none;}
+  
+/*
+#################################################
+ADVANCED SEARCH FILTERS && CUSTOM POST TYPES
+#################################################
+*/
+.geodir_advance_search.geodir_custom_posts .showFilters{width:96%;margin-left:2%;float:none;}
+}
+
+@media only screen and (max-width:420px)
+{
+  .geodir-search input[type="text"],
+  .geodir-search select,
+  .geodir-search input[type="button"]{width:100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}	
+}
+
+@media only screen and (max-width:320px)
+{
+  .geodir_category_grid_view li.gridview_onethird, .geodir_category_grid_view li.gridview_onefifth, .geodir_category_grid_view li.gridview_onehalf, .geodir_category_grid_view li.gridview_onefourth{ max-width:inherit; width:100%;}
+  .geodir-content-right .geodir_category_grid_view li.gridview_onehalf{ width:100%;}
+  .map_category{padding:5px;}
+}
+
+html.mm-opened body {
+	overflow: hidden;
+}
+
+article .article-header .gdf-featured-post-image {
+	margin-bottom: 1.71429rem
+}
+article .article-header .gdf-featured-post-image img {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+}
+/*features widget*/
+#geodir_content .widget_gd_features {
+	padding: 0;
+}
+.geodir-post-img .geodir_thumbnail img {
+	max-height: 100% !important;
+}
+
+/*gd lists*/
+.post-type-archive-gd_list #geodir_content article.gd_list {
+	margin-bottom: 0;
+	border-bottom: 1px solid #f8f9fa;
+}
+.post-type-archive-gd_list #geodir_content article.gd_list header {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.post-type-archive-gd_list #geodir_content article.gd_list .entry-content {
+	padding-top: 10px;
+}
+.post-type-archive-gd_list #geodir_content article.gd_list .article-filed-under {
+	display: none;
+}
+.post-type-archive-gd_list #geodir_content .archive-title {
+	padding: 0 20px;
+}
+
+.hentry header {
+	padding: 0;
+}
+.single-title, .page-title, .entry-title {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+body.post-type-archive .entry-title {
+	padding-left: 0;
+}
+
+body.blog .article-header .entry-title,
+body.single-post .article-header .entry-title {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+body.single-post .article-header .entry-title {
+	padding-bottom: 5px;
+}
+
+body.blog .article-header .vcard,
+body.single-post .article-header .vcard {
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+body.blog .entry-content,
+body.single-post .entry-content,
+body.page .entry-content {
+	padding: 10px 10px 0;
+}
+body.blog .hentry footer,
+body.page .hentry footer {
+	padding: 0;
+}
+body.single-post .hentry footer {
+	padding: 10px;
+}
+
+body.single-post .comment-respond,
+body.page .comment-respond {
+	padding: 10px;
+}

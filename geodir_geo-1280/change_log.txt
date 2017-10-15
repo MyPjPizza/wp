@@ -1,0 +1,13 @@
+v1.0.3
+Footer credits double link removed - FIXED
+Added WP Easy Updates compatibility - ADDED
+
+v1.0.2
+removed double title from listing and search pages - FIXED
+WordPress 4.7 layout fix due to genesis action priority - FIXED
+
+v1.0.1
+Style changes/fixes for most recent genesis release - FIXED
+
+v1.0.0
+Initail release

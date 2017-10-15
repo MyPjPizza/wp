@@ -1,0 +1,220 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms - List & Edit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-03 12:45+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ralf Fuhrmann <admin@specialpress.net>\n"
+"Language-Team: Ralf Fuhrmann <admin@specialpress.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: sp-gf-list-edit.php:381
+msgid "Cancel"
+msgstr ""
+
+#: sp-gf-list-edit.php:386 sp-gf-list-edit.php:1272
+msgid "Delete"
+msgstr ""
+
+#: sp-gf-list-edit.php:389
+msgid "Update"
+msgstr ""
+
+#: sp-gf-list-edit.php:1021
+msgid "Search"
+msgstr ""
+
+#: sp-gf-list-edit.php:1269
+msgid "Edit"
+msgstr ""
+
+#: sp-gf-list-edit.php:1280
+msgid "View"
+msgstr ""
+
+#: sp-gf-list-edit.php:1304
+msgid "Addnew"
+msgstr ""
+
+#: sp-gf-list-edit.php:1317
+msgid "You must be logged in."
+msgstr ""
+
+#: sp-gf-list-edit.php:1341
+msgid "Show Field in Entry List"
+msgstr ""
+
+#: sp-gf-list-edit.php:1436
+msgid "Number of Rows"
+msgstr ""
+
+#: sp-gf-list-edit.php:1440
+msgid "CSS Class Name"
+msgstr ""
+
+#: sp-gf-list-edit.php:1444
+msgid "Display Lead-Id"
+msgstr ""
+
+#: sp-gf-list-edit.php:1447
+msgid "Display Lead-Id as first column at the Entry-List"
+msgstr ""
+
+#: sp-gf-list-edit.php:1451
+msgid "Require user to be logged in"
+msgstr ""
+
+#: sp-gf-list-edit.php:1454
+msgid "Require user to be logged in to view the list"
+msgstr ""
+
+#: sp-gf-list-edit.php:1458
+msgid "Show records to all users"
+msgstr ""
+
+#: sp-gf-list-edit.php:1461
+msgid "Show records to all users or only to the record creator"
+msgstr ""
+
+#: sp-gf-list-edit.php:1465
+msgid "Enable Edit-Mode"
+msgstr ""
+
+#: sp-gf-list-edit.php:1468
+msgid "Enable edit mode for this form"
+msgstr ""
+
+#: sp-gf-list-edit.php:1472
+msgid "Enable View Button"
+msgstr ""
+
+#: sp-gf-list-edit.php:1475
+msgid "Enable an 'View' Button for each entry"
+msgstr ""
+
+#: sp-gf-list-edit.php:1479
+msgid "Enable Delete Button"
+msgstr ""
+
+#: sp-gf-list-edit.php:1482
+msgid "Enable an 'Delete' Button for each entry"
+msgstr ""
+
+#: sp-gf-list-edit.php:1486
+msgid "Enable AddNew Button"
+msgstr ""
+
+#: sp-gf-list-edit.php:1489
+msgid "Enable an 'AddNew' Button at the bottom of the list"
+msgstr ""
+
+#: sp-gf-list-edit.php:1493
+msgid "Page to the gfEdit destination"
+msgstr ""
+
+#: sp-gf-list-edit.php:1524
+msgid "Enable tQuery"
+msgstr ""
+
+#: sp-gf-list-edit.php:1527
+msgid "Enable tQuery support"
+msgstr ""
+
+#: sp-gf-list-edit.php:1531
+msgid "Display tQuery search"
+msgstr ""
+
+#: sp-gf-list-edit.php:1534
+msgid "Show the tquery search box"
+msgstr ""
+
+#: sp-gf-list-edit.php:1538
+msgid "Display tQuery pagination"
+msgstr ""
+
+#: sp-gf-list-edit.php:1541
+msgid "Show the tquery pagination (the row setting will be used)"
+msgstr ""
+
+#: sp-gf-list-edit.php:1612
+msgid "on all events"
+msgstr ""
+
+#: sp-gf-list-edit.php:1613
+msgid "only on addnew"
+msgstr ""
+
+#: sp-gf-list-edit.php:1614
+msgid "only on delete"
+msgstr ""
+
+#: sp-gf-list-edit.php:1615
+msgid "only on update"
+msgstr ""
+
+#: sp-gf-list-edit.php:1631
+msgid "send notification for"
+msgstr ""
+
+#~ msgid "SAP User Connect Settings"
+#~ msgstr "SAP User Connect Einstellungen"
+
+#~ msgid "Connect Settings"
+#~ msgstr "Verbindungs Parameter"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Plugin Einstellungen"
+
+#~ msgid "Only SAP-Users could register"
+#~ msgstr "Nur SAP-Benutzer dürfen sich Registrieren"
+
+#~ msgid "Only SAP-Users could login"
+#~ msgstr "Nur SAP-Benutzer dürfen sich Anmelden"
+
+#~ msgid "Exclude Users"
+#~ msgstr "Benutzer ausschliessen"
+
+#~ msgid ""
+#~ "Add the Usernames that should not be checked against SAP(e.g. the ADMIN). "
+#~ "Seperate the usernames with a comma"
+#~ msgstr ""
+#~ "Tragen Sie hier die Benutzernamen ein, die beim Anmelden NICHT gegen SAP "
+#~ "geprüft werden sollen (z.b. der Wordpress Admin). Bitte trennen Sie die "
+#~ "Benutzernamen mit einem Komma."
+
+#~ msgid "Save Changes"
+#~ msgstr "Änderungen speichern"
+
+#~ msgid "Please Note !<br />Your username will be checked against SAP."
+#~ msgstr "Achtung !<br />Der Benutzername wird gegen SAP geprüft."
+
+#~ msgid ""
+#~ "Username <strong>%s</strong> doesn't exist in SAP. <br />Please use your "
+#~ "SAP Username to Register."
+#~ msgstr ""
+#~ "Benutzername <strong>%s</strong> existiert nicht in SAP. <br />Bitte "
+#~ "verwenden Sie Ihren SAP-Benutzernamen zur Registrierung."
+
+#~ msgid ""
+#~ "Username <strong>%s</strong> doesn't exist in SAP. <br />Please use your "
+#~ "SAP Username to Login."
+#~ msgstr ""
+#~ "Benutzername <strong>%s</strong> existiert nicht in SAP. <br />Bitte "
+#~ "verwenden Sie Ihren SAP-Benutzernamen zur Anmeldung"
+
+#~ msgid "Determine Details for an User"
+#~ msgstr "Zeigt Details zum Benutzer an"
+
+#~ msgid "Not a SAP User"
+#~ msgstr "Kein SAP Benutzer"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"

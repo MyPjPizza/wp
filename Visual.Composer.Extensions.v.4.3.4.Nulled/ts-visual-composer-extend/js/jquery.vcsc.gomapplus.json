@@ -1,0 +1,71 @@
+/*
+ * For performance reasons, you should provide all marker locations via GPS coordinates (latitude / longitude), instead of using postal addresses.
+ *
+ * Coordinates can be used by the map immediately, while addresses have to be geocoded first, in order to obtain the matching coordinates.
+ *
+ * Google imposes limits as to how many geocode requests can be sent at a time and also sets a daily limit. So use addresses, if necessary, only for few markers.
+ *
+ * Do NOT change the Callback Name "GoogleMapsPlusMarkerImport" as it is required!
+ *
+ * The following parameter are required for each marker: 'title' AND 'latitude' + 'longitude' (if using coordinates) or 'address'
+*/
+
+GoogleMapsPlusMarkerImport(
+	{
+		'markers':
+		[
+            /*
+            {
+                // Marker Title / Name
+                'title':                '',                         // required!
+                // Optional Marker Group Name
+                'group':                '',
+                // Marker Location: Latitude                        
+                'latitude':             '',                         // required! (or 'address')
+                // Marker Location: Longitude
+                'longitude':            '',                         // required! (or 'address')
+                // Marker Location: Address
+                'address':              '',                         // required! (or 'latitude' + 'longitude')
+                // Full Path to Marker Image
+                'icon':                 '',
+                // InfoWindow Content (Basic HTML Code can be used for styling)
+                'content':              '',
+                // Allow Automatic Streetview
+                'streetview':           false,
+                // Show Directions Button + Text
+                'directions_show':       false,
+                'directions_text':      'Get Directions',
+                // Show Google Map Button + Text
+                'googlemap_show':       false,
+                'googlemap_text':       'View on Google Maps',
+                // Show other Link Button + Link + Text
+                'other_show':            false,
+                'other_url':            '',
+                'other_text':           'Learn More!',
+            },
+            */
+            {
+                'title':                'Brandenburg Gate',
+                'group':                'Sights',
+                'latitude':             '52.51626004',
+                'longitude':            '13.3774209',
+                'address':              '',
+                'icon':                 '',
+                'content':              '',
+                'streetview':           false,
+                'directions_show':      true,
+                'directions_text':      'Get Directions',
+                'googlemap_show':       true,
+                'googlemap_text':       'View on Google Maps',
+                'other_show':           true,
+                'other_url':            'https://en.wikipedia.org/wiki/Brandenburg_Gate',
+                'other_text':           'Learn More!',
+            },
+            {
+                'title':                'Berlin Victory Column',
+                'latitude':             '52.5143405',
+                'longitude':            '13.34984779',
+            },
+		],
+	}
+);

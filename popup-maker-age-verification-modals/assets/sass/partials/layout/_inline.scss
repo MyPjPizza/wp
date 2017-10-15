@@ -1,0 +1,41 @@
+/**
+* Inline Layouts
+*/
+.pum-age-form.layout-inline {
+
+  /**
+  * Enter / Exit Form
+  */
+  &[data-type="enterexit"] {
+    .pum-age-buttons {
+      .pum-field {
+        display: inline-block;
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  /**
+  * Birthdate Form
+  */
+  &[data-type="birthdate"] {
+    .pum-age-form-fields,
+    .pum-field,
+    .pum-field-button {
+      display: inline-block;
+    }
+
+    .pum-field {
+      label,
+      input,
+      select {
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+}

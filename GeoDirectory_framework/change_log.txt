@@ -1,0 +1,48 @@
+v1.2.8
+Fixed some style issues - FIXED
+
+v1.2.7
+Structured data tags - ADDED
+Upgraded TGM_Plugin_Activation class - CHANGED
+GD Lists compatibility - ADDED
+
+v1.2.6
+Search widget removed from mobile user profile sidebar - CHANGED
+Location switcher can be rendered twice in mobile menu - FIXED
+Settings now saved even if they are the same as old to prevent a multisite bug - FIXED
+Small fix for incompatibility with CF7 customizer plugin - FIXED
+Blog page widget titles doesn't have borders - FIXED
+Mobile login widget title change from h2 to strong - CHANGED
+
+v1.2.5
+blog-page.php using page sidebar instead of blog listing sidebar - FIXED
+Some titles have fixed width, changed to width 100% - CHANGED
+The category description is not responsive - FIXED
+Blog avatar not the same as GD avatar src - CHANGED
+New update licence system implemented - CHANGED
+
+v1.2.4
+Screenshot.png updated to new version - CHANGED
+Homepage settings warning updated - CHANGED
+Featured image is not visible in blog single page - FIXED
+
+v1.2.3
+Footer widgets not showing due to init priority - FIXED
+
+v1.2.2
+GDF now loads on init hook to stop some budypress PHP notices - CHANGED
+Link added for author on blog post page - CHANGED
+Login/signup urls changed to new GD function geodir_login_url() - CHANGED
+
+v1.2.1
+Auto-update script missing - ADDED
+
+v1.2.0
+Mobile menu drop downs not showing on chrome small devices - FIXED
+CSS rule breaking shortcode images - FIXED
+Dynamic styles sheet auto saves on theme update - FIXED
+All widgets changed from PHP4 style constructors to PHP5 __construct, for WordPress 4.3 - CHANGED
+Styles saved on multisite take affect on all blogs - FIXED
+
+v1.1.0
+CSS changes for buddypress addon - CHANGED

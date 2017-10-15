@@ -1,0 +1,17 @@
+v1.0.4
+Added WP Easy Updates compatibility - ADDED
+
+v1.0.2
+Sidebar has loads of extra paddning and looks bad on mobile devices - FIXED
+Listing views use old way of setting x per row - UPDATED
+header.php still using title - REMOVED
+Changed to modern way of calling styles - CHANGED
+Removed search from mobile menu - REMOVED
+
+v1.0.1
+Double breadcrumb on locations pages - FIXED
+List view post tiles too big - FIXED
+Sometimes scroll bars can appear on listview - FIXED
+
+v1.0.0
+Initial release

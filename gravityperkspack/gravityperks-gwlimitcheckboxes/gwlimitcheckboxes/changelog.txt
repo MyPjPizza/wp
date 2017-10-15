@@ -1,0 +1,59 @@
+
+# Changelog
+
+## 1.1.3
+
+    - Fixed issue where pre-selected checkboxes did not initially count towards limit
+
+## 1.1.2
+
+    - Fixed issue where choices disabled by GP Limit Choices were enabled unintentionally
+
+## 1.1.1
+
+    - Moved script from <script> block to separate js file
+
+## 1.1
+
+    - Updated styling of Span Limit feature in the admin
+    - Updated minimum Gravity Perks version to 1.2.8.12
+    - Fixed bug when Span Limit feature was used on multiple groups of fields
+    - Fixed issue where ASM Select stylesheet was not enqueued if GF's No Conflict Mode was activated
+
+## 1.0.9
+
+    - Updated validation to use Custom Validation message setting if set when minimum checkbox count not reached
+
+## 1.0.8
+
+    - Fixed issue where script error was generated when reloading form from Save & Continue URL
+
+## 1.0.7
+
+    - Fixed issue where individual limit was ignored in favor of spanned limit
+
+## 1.0.6
+
+    - Fixed issue caused when min limit was set but no max
+    - Added checkbox script as noconflict script
+    - Fixed issue where $ was referenced and not available
+
+## 1.0.5
+
+    - Fixed issue where checkboxLimit script is output on AJAX submission (causing jQuery not defined error)
+
+## 1.0.4
+
+    - Commented out initializers in limitcheckboxes.php
+
+## 1.0.3
+
+    - Fixed issue where checkboxes on subsequent pages are not validated until the page they are one is submitted
+
+## 1.0.2
+
+	- Added support for showing a default label for unlabeled checkbox fields in Span Limit UI
+
+## 1.0.1
+
+    - Updated enqueue_admin_scripts() method to only enqueue scripts on the form editor

@@ -1,0 +1,49 @@
+.pum-age-form {
+  margin: 0 auto 16px;
+
+  &.align-left {
+    text-align: left;
+  }
+
+  &.align-center {
+    text-align: center;
+  }
+
+  &.align-right {
+    text-align: right;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 20px;
+    line-height: 28px;
+    height: auto;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  select, input[type="date"] {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding: 3px;
+    vertical-align: middle;
+  }
+
+  select {
+    padding: 5px 3px;
+  }
+
+  .pum-form-error {
+    margin: 8px 0 0;
+    color: #b51623;
+  }
+}

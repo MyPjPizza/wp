@@ -1,0 +1,81 @@
+# Copyright (C) 2016 popup-maker-age-verification-modals
+# This file is distributed under the same license as the popup-maker-age-verification-modals package.
+msgid ""
+msgstr ""
+"Project-Id-Version: popup-maker-age-verification-modals\n"
+"Report-Msgid-Bugs-To: https://wppopupmaker.com/support\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Language-Team: WP Popup Maker <support@wppopupmaker.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+
+#: popup-maker-age-verification-modals.php:182
+msgid "Use the Popup Maker shortcode button %s on the editor toolbar to insert and customize your age verification form."
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:192
+msgid "Redirect URL"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:193
+msgid "Users that fail verification will be redirected to this url on return visits until the cookie expires."
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:194
+msgid "disney.com, example.com/too-young"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:195
+msgid "http://www.disney.com"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:227
+msgid "Age Verification"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:228
+msgid "Age Verification Settings"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:232
+msgid "Failed Age Redirect"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:233
+msgid "Failed Age Redirect Settings"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:234
+msgid "URL"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:313
+msgid "Enter Clicked"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:314
+msgid "Exit Clicked"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:315
+msgid "Age Entered"
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:318
+msgid "Sorry but you do not appear to be old enough."
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:319
+msgid "Sorry but you have been locked out Please come back when you are old enough."
+msgstr ""
+
+#: popup-maker-age-verification-modals.php:320
+msgid "Please enter a valid date."
+msgstr ""

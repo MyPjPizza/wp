@@ -1,0 +1,164 @@
+# Copyright (C) 2015 GP Limit Dates
+# This file is distributed under the same license as the GP Limit Dates package.
+msgid ""
+msgstr ""
+"Project-Id-Version: GP Limit Dates 1.0.beta1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/gp-limit-dates\n"
+"POT-Creation-Date: 2015-07-13 05:19:47+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-gp-limit-dates.php:40
+msgid "Invalid Date"
+msgstr ""
+
+#: class-gp-limit-dates.php:49 class-gp-limit-dates.php:105
+msgid "Minimum Date"
+msgstr ""
+
+#: class-gp-limit-dates.php:49
+msgid "Specify the minimum date that can be selected in this field."
+msgstr ""
+
+#: class-gp-limit-dates.php:50 class-gp-limit-dates.php:128
+msgid "Maximum Date"
+msgstr ""
+
+#: class-gp-limit-dates.php:50
+msgid "Specify the maximum date that can be selected in this field."
+msgstr ""
+
+#: class-gp-limit-dates.php:51
+msgid "Date Modifier"
+msgstr ""
+
+#: class-gp-limit-dates.php:51
+msgid "Modify the selected date by adding or subracting days, weeks, months or years.<br /><code>+1 day</code> <code>-2 weeks</code> <code>+3 years</code>"
+msgstr ""
+
+#: class-gp-limit-dates.php:52 class-gp-limit-dates.php:151
+msgid "Days of the Week"
+msgstr ""
+
+#: class-gp-limit-dates.php:52
+msgid "Specify the days of the week for which dates should be selectable."
+msgstr ""
+
+#: class-gp-limit-dates.php:53 class-gp-limit-dates.php:176
+msgid "Exceptions"
+msgstr ""
+
+#: class-gp-limit-dates.php:53
+msgid "Specify any dates that should be excepted from the above rules."
+msgstr ""
+
+#: class-gp-limit-dates.php:157
+msgid "All Days"
+msgstr ""
+
+#: class-gp-limit-dates.php:189
+msgid "Add Exception"
+msgstr ""
+
+#: class-gp-limit-dates.php:539
+msgid "Monday"
+msgstr ""
+
+#: class-gp-limit-dates.php:540
+msgid "Mon"
+msgstr ""
+
+#: class-gp-limit-dates.php:544
+msgid "Tuesday"
+msgstr ""
+
+#: class-gp-limit-dates.php:545
+msgid "Tues"
+msgstr ""
+
+#: class-gp-limit-dates.php:549
+msgid "Wednesday"
+msgstr ""
+
+#: class-gp-limit-dates.php:550
+msgid "Wed"
+msgstr ""
+
+#: class-gp-limit-dates.php:554
+msgid "Thursday"
+msgstr ""
+
+#: class-gp-limit-dates.php:555
+msgid "Thur"
+msgstr ""
+
+#: class-gp-limit-dates.php:559
+msgid "Friday"
+msgstr ""
+
+#: class-gp-limit-dates.php:560
+msgid "Fri"
+msgstr ""
+
+#: class-gp-limit-dates.php:564
+msgid "Saturday"
+msgstr ""
+
+#: class-gp-limit-dates.php:565
+msgid "Sat"
+msgstr ""
+
+#: class-gp-limit-dates.php:569
+msgid "Sunday"
+msgstr ""
+
+#: class-gp-limit-dates.php:570
+msgid "Sun"
+msgstr ""
+
+#: class-gp-limit-dates.php:695
+msgid "Please enter a valid date."
+msgstr ""
+
+#: class-gp-limit-dates.php:790
+msgid "Select Date"
+msgstr ""
+
+#: class-gp-limit-dates.php:794
+msgid "Date Fields"
+msgstr ""
+
+#: class-gp-limit-dates.php:799
+msgid "Other"
+msgstr ""
+
+#: class-gp-limit-dates.php:803
+msgid "Set Specific Date"
+msgstr ""
+
+#: class-gp-limit-dates.php:807
+msgid "Current Date"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "GP Limit Dates"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://gravitywiz.com/documentation/gp-limit-dates/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Limit which days are selectable for your Gravity Forms Datepicker fields."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "David Smith"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://gravitywiz.com/"
+msgstr ""

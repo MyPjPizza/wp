@@ -1,0 +1,169 @@
+# Copyright (C) 2017 GP Unique ID
+# This file is distributed under the same license as the GP Unique ID package.
+msgid ""
+msgstr ""
+"Project-Id-Version: GP Unique ID 1.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/gp-unique-id\n"
+"POT-Creation-Date: 2017-02-20 01:47:48+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-gp-unique-id.php:80
+msgid "Unique ID Type"
+msgstr ""
+
+#: class-gp-unique-id.php:86
+msgid "Unique ID Prefix"
+msgstr ""
+
+#: class-gp-unique-id.php:87
+msgid "Prepend a short string to the beginning of the generated ID (i.e. %1$s%3$sabc%4$s123890678%2$s)."
+msgstr ""
+
+#: class-gp-unique-id.php:94
+msgid "Unique ID Suffix"
+msgstr ""
+
+#: class-gp-unique-id.php:95
+msgid "Append a short string to the end of the generated ID (i.e. %1$s123890678%3$sxyz%4$s%2$s)."
+msgstr ""
+
+#: class-gp-unique-id.php:102
+msgid "Unique ID Length"
+msgstr ""
+
+#: class-gp-unique-id.php:109
+msgid "Unique ID Starting Number"
+msgstr ""
+
+#: class-gp-unique-id.php:109
+msgid "Set the starting number for sequential IDs; only available when \"Sequential\" type is selected."
+msgstr ""
+
+#: class-gp-unique-id.php:115
+msgid "Reset Starting Number"
+msgstr ""
+
+#: class-gp-unique-id.php:116
+msgid "Reset the sequence to the specified starting number when it is a lower number than the current sequence.<br /><br />By default, the starting number will only apply when the current sequence is lower than the specified starting number (i.e. if the current sequence is '1' and the starting number is '99', the sequence would be updated to '99').<br /><br />This option is useful after you have submitted a number of test entries and would like to reset the current sequence (i.e. if the current sequence is '12' and you would like to reset it to '1')."
+msgstr ""
+
+#: class-gp-unique-id.php:124
+msgid "Select the type of unique ID you would like to generate."
+msgstr ""
+
+#: class-gp-unique-id.php:136
+msgid "Set a specific length for the generated ID (excluding the prefix and suffix) or leave empty to use default length. There are some differences in length requirements for each ID type."
+msgstr ""
+
+#: class-gp-unique-id.php:140
+msgid "Requires a minimum length of <code>4</code>."
+msgstr ""
+
+#: class-gp-unique-id.php:141
+msgid "Requires a minimum length of <code>9</code> and a maximum length of <code>19</code>."
+msgstr ""
+
+#: class-gp-unique-id.php:142
+msgid "Length is used to pad the number with zeros (i.e. an ID of <code>1</code> with a length of <code>5</code> would be <code>00001</code>). There is no minimum length."
+msgstr ""
+
+#: class-gp-unique-id.php:157
+msgid "Alphanumeric"
+msgstr ""
+
+#: class-gp-unique-id.php:158
+msgid "Contains letters and numbers (i.e. %sa12z9%s)."
+msgstr ""
+
+#: class-gp-unique-id.php:161
+msgid "Numeric"
+msgstr ""
+
+#: class-gp-unique-id.php:162
+msgid "Contains only numbers (i.e. %s152315902%s)."
+msgstr ""
+
+#: class-gp-unique-id.php:165
+msgid "Sequential"
+msgstr ""
+
+#: class-gp-unique-id.php:166
+msgid "Contains only numbers and is sequential with previously generated IDs per field (i.e. %1$s1%2$s, %1$s2%2$s, %1$s3%2$s)."
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:43
+#: includes/class-gf-field-unique-id.php:67
+msgid "Unique ID"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:84
+msgid "Type"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:107
+msgid "Starting Number"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:115
+msgid "reset"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:122
+msgid "Length"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:134
+msgid "Prefix"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:145
+msgid "Suffix"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:248
+msgid "resetting"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:427
+msgid "Oops! There was an error resetting the starting number."
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:435
+msgid "Reset successfully!"
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:440
+msgid "Already reset."
+msgstr ""
+
+#: includes/class-gf-field-unique-id.php:445
+msgid "Error resetting."
+msgstr ""
+
+#: includes/class-gp-bootstrap.php:43
+msgid "This plugin requires Gravity Perks. Activate it now or %1$spurchase it today!%2$s"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "GP Unique ID"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://gravitywiz.com/documentation/gp-unique-id/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Generate unique IDs (i.e. reference numbers, codes, invoice numbers, etc.) on submission for your Gravity Form entries."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "David Smith"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://gravitywiz.com/"
+msgstr ""

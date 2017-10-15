@@ -1,0 +1,37 @@
+/**
+* Vertical Layouts
+*/
+.pum-age-form.layout-vertical {
+
+  /**
+  * Enter / Exit Form
+  */
+  &[data-type="enterexit"] {
+    .pum-age-buttons {
+      .pum-field {
+        display: block;
+        margin: 0 auto 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  /**
+  * Birthdate Form
+  */
+  &[data-type="birthdate"] {
+    label {
+      display: block;
+      margin: 0 0 8px;
+    }
+    input, select {
+      display: inline-block;
+      margin: 0 auto 12px;
+    }
+
+
+  }
+}

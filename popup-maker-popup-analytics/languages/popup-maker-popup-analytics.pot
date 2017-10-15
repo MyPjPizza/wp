@@ -1,0 +1,389 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Popup Maker - Popup Analytics\n"
+"POT-Creation-Date: 2015-04-11 14:12-0500\n"
+"PO-Revision-Date: 2015-04-11 14:13-0500\n"
+"Last-Translator: Daniel Iser <danieliser@wizardinternetsolutions.com>\n"
+"Language-Team: Daniel Iser <danieliser@wizardinternetsolutions.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/analytics/class-pages.php:21
+msgid "Report not found"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:80
+msgid "Opens"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:81
+#: includes/admin/analytics/class-pages.php:186
+#: includes/admin/popups/class-columns.php:19
+#: includes/admin/popups/class-metaboxes.php:320
+msgid "Conversions"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:82
+#: includes/admin/analytics/class-pages.php:191
+#: includes/admin/popups/class-columns.php:21
+msgid "Conversion Rate"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:170
+#: includes/admin/analytics/class-pages.php:364
+msgid "URL Stats"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:176
+msgid "URL"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:181
+#: includes/admin/popups/class-metaboxes.php:302
+msgid "Views"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:273
+#: popup-maker-popup-analytics.php:282 popup-maker-popup-analytics.php:294
+#: popup-maker-popup-analytics.php:306 popup-maker-popup-analytics.php:356
+#: popup-maker-popup-analytics.php:362 popup-maker-popup-analytics.php:368
+msgid "Popup"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:281
+msgid "Select a Popup"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:288
+msgid "Process Upgrades."
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:295
+msgid "Please wait, this could take several minutes."
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:304
+#, php-format
+msgid ""
+"This could take several minutes. Please be patient. Click %shere%s to start."
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:311
+msgid "Upgrade Complete."
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:365
+msgid "Open Stats"
+msgstr ""
+
+#: includes/admin/analytics/class-pages.php:374
+msgid "Submit"
+msgstr ""
+
+#: includes/admin/functions.php:31
+msgid "Category"
+msgstr ""
+
+#: includes/admin/functions.php:36
+msgid "Action"
+msgstr ""
+
+#: includes/admin/functions.php:41
+msgid "Label"
+msgstr ""
+
+#: includes/admin/functions.php:46
+msgid "Value"
+msgstr ""
+
+#: includes/admin/popups/class-columns.php:17
+msgid "Opened"
+msgstr ""
+
+#: includes/admin/popups/class-columns.php:18
+msgid "Avg Time Open"
+msgstr ""
+
+#: includes/admin/popups/class-columns.php:20
+msgid "Avg Conversion Time"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:17
+msgid "Analytics & Stats"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:18
+msgid "Conversion Settings"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:22
+msgid "Google Analytics Settings"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:65
+msgid "On Conversion"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:72
+msgid "None / Auto"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:73
+msgid "Form Submit"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:74
+msgid "Button Click"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:75
+msgid "Link Click"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:116
+msgid "Override Open Event Info"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:119
+msgid "This will allow custom values for GA Events when popup is opened."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:125
+#: includes/admin/popups/class-metaboxes.php:177
+#: includes/admin/popups/class-metaboxes.php:229
+msgid "Event Category"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:130
+#: includes/admin/popups/class-metaboxes.php:182
+#: includes/admin/popups/class-metaboxes.php:234
+msgid "Enter custom category text."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:136
+#: includes/admin/popups/class-metaboxes.php:188
+#: includes/admin/popups/class-metaboxes.php:240
+msgid "Event Action"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:141
+#: includes/admin/popups/class-metaboxes.php:193
+#: includes/admin/popups/class-metaboxes.php:245
+msgid "Enter custom action text."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:147
+#: includes/admin/popups/class-metaboxes.php:199
+#: includes/admin/popups/class-metaboxes.php:251
+msgid "Event Label"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:152
+#: includes/admin/popups/class-metaboxes.php:204
+#: includes/admin/popups/class-metaboxes.php:256
+msgid "Enter custom label text."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:158
+#: includes/admin/popups/class-metaboxes.php:210
+#: includes/admin/popups/class-metaboxes.php:262
+msgid "Event Value"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:163
+#: includes/admin/popups/class-metaboxes.php:215
+#: includes/admin/popups/class-metaboxes.php:267
+msgid "Enter custom value text."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:168
+#: includes/admin/popups/class-metaboxes.php:220
+msgid "Override Close Event Info"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:171
+msgid "This will allow custom values for GA Events when popup is closed."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:223
+msgid ""
+"This will allow custom values for GA Events when a conversion occurs in this "
+"popup."
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:305
+#: includes/admin/popups/class-metaboxes.php:323
+msgid "Count"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:309
+#: includes/admin/popups/class-metaboxes.php:331
+msgid "Avg Time"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:310
+#: includes/admin/popups/class-metaboxes.php:314
+#: includes/admin/popups/class-metaboxes.php:332
+msgid "N/A"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:313
+msgid "Last View"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:327
+msgid "Conv Rate"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:366
+msgid "Convert On"
+msgstr ""
+
+#: includes/admin/popups/class-metaboxes.php:375
+msgid ""
+"Choose what will count as a conversion. Choose <code>None / Auto</code> if "
+"you are using one of the supported form plugins."
+msgstr ""
+
+#: includes/admin/upgrades/class-upgrades.php:47
+#, php-format
+msgid ""
+"Your popup analytics needs to be updated, click %shere%s to start the "
+"upgrade."
+msgstr ""
+
+#: includes/class-admin.php:40 includes/class-admin.php:41
+#: includes/class-legacy.php:30 includes/class-legacy.php:42
+msgid "Analytics"
+msgstr ""
+
+#: includes/class-legacy.php:29
+msgid "Analytic"
+msgstr ""
+
+#: includes/class.extension-activation.php:49
+msgid "This plugin"
+msgstr ""
+
+#: includes/class.extension-activation.php:86
+msgid "activate it"
+msgstr ""
+
+#: includes/class.extension-activation.php:89
+msgid "install it"
+msgstr ""
+
+#: includes/class.extension-activation.php:92
+#, php-format
+msgid " requires Popup Maker! Please %s to continue!"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:229
+msgid "Popup Analytics Settings"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:230
+msgid "Configure Popup Analytics Settings"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:237
+msgid "Disable Tracking for Logged In Users?"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:238
+msgid "Disables popup tracking for logged in admin users."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:243
+msgid "Disable for which Roles?"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:244
+msgid "Select the user roles you don't want to track."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:252
+msgid "Google Analytics"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:258
+msgid "Enable Google Analytics Tracking?"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:259
+msgid ""
+"For best results this requires you to already be using GA on your site.<br/"
+"><strong>Currently Only Works with Googles new Universal Analytics.</strong>"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:264
+msgid "Enter your GA Tracking ID."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:265
+msgid "Should resemble <strong>UA-XXXXXXXX-X</strong>"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:272
+msgid "Default GA Event Labels"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:278 popup-maker-popup-analytics.php:283
+#: popup-maker-popup-analytics.php:357
+msgid "Open"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:279
+msgid "Enter default open event event information."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:290 popup-maker-popup-analytics.php:295
+#: popup-maker-popup-analytics.php:363
+msgid "Close"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:291
+msgid "Enter default close event event information."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:302 popup-maker-popup-analytics.php:307
+#: popup-maker-popup-analytics.php:369
+msgid "Conversion"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:303
+msgid "Enter default conversion event information."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:316
+msgid "Debugging"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:322
+msgid "Enable Google Analytics Debugging?"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:323
+msgid ""
+"This enables emailed reports from google when an error occurs with the "
+"details."
+msgstr ""
+
+#: popup-maker-popup-analytics.php:328
+msgid "Debug Email Address"
+msgstr ""
+
+#: popup-maker-popup-analytics.php:329
+msgid "The email you want debug reports sent to."
+msgstr ""

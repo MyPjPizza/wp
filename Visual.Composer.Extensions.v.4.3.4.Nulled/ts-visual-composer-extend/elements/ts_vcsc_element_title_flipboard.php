@@ -1,0 +1,282 @@
+<?php
+    global $VISUAL_COMPOSER_EXTENSIONS;
+	
+    $VISUAL_COMPOSER_EXTENSIONS->TS_VCSC_VisualComposer_Element = array(
+		"name"                      	=> __( "TS Title Flipboard", "ts_visual_composer_extend" ),
+		"base"                      	=> "TS_VCSC_Title_Flipboard",
+		"icon" 	                    	=> "ts-composer-element-icon-title-flipboard",
+		"class"                     	=> "",
+		"category"                  	=> __( "VC Extensions", "ts_visual_composer_extend" ),
+		"description"               	=> __("Place a title with flipboard effect", "ts_visual_composer_extend"),
+		"admin_enqueue_js"        		=> "",
+		"admin_enqueue_css"       		=> "",
+		"params"                    	=> array(
+			// Flipboard Settings
+			array(
+				"type"              	=> "seperator",
+				"heading"           	=> "",
+				"param_name"        	=> "seperator_1",
+				"value"					=> "",
+				"seperator"         	=> "Title Settings",
+				"description"       	=> ""
+			),	
+			array(
+				"type"              	=> "dropdown",
+				"heading"           	=> __( "Alphabet Coding", "ts_visual_composer_extend" ),
+				"param_name"        	=> "language",
+				"width"             	=> 150,
+				"value"             	=> array(
+					__( "Latin Alphabet", "ts_visual_composer_extend" )				=> "latin",
+					__( "Russian Alphabet", "ts_visual_composer_extend" )			=> "russian",
+					//__( "Greek Alphabet", "ts_visual_composer_extend" )			=> "greek",
+				),
+				"admin_label"       	=> true,					
+				"description"       	=> __( "Select the alphabet that will be used to provide the title string.", "ts_visual_composer_extend" )
+			),
+			array(
+				"type"              	=> "messenger",
+				"heading"           	=> "",
+				"param_name"        	=> "messenger_latin",
+				"color"					=> "#006BB7",
+				"size"					=> "12",
+				"value"					=> "",
+				"border_top"			=> "false",
+				"margin_top"			=> 0,
+				"padding_top"			=> 0,
+				"dependency"        	=> array( 'element' => "language", 'value' => 'latin' ),
+				"message"            	=> __( "Allowed Characters (Including Space):", "ts_visual_composer_extend" ) . "<br/>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz<br/>0123456789.,!?#@()+-=",
+				"description"       	=> ""
+			),
+			array(
+				"type"              	=> "messenger",
+				"heading"           	=> "",
+				"param_name"        	=> "messenger_cyrillic",
+				"color"					=> "#006BB7",
+				"size"					=> "12",
+				"value"					=> "",
+				"border_top"			=> "false",
+				"margin_top"			=> 0,
+				"padding_top"			=> 0,
+				"dependency"        	=> array( 'element' => "language", 'value' => 'russian' ),
+				"message"            	=> __( "Allowed Characters (Including Space):", "ts_visual_composer_extend" ) . "<br/>АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя<br/>0123456789.,!?#@()+-=",
+				"description"       	=> ""
+			),
+			/*array(
+				"type"              	=> "messenger",
+				"heading"           	=> "",
+				"param_name"        	=> "messenger_greek",
+				"color"					=> "#006BB7",
+				"size"					=> "12",
+				"value"					=> "",
+				"border_top"			=> "false",
+				"margin_top"			=> 0,
+				"padding_top"			=> 0
+				"dependency"        	=> array( 'element' => "language", 'value' => 'greek' ),
+				"message"            	=> __( "Allowed Characters (Including Space):", "ts_visual_composer_extend" ) . "<br/>ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΊΎΏΌαβγδεζηθικλμνξοπρστυφχψωάέίύόώϊϋ<br/>0123456789.,!?#@()+-=",
+				"description"       	=> ""
+			),*/
+			array(
+				"type"              	=> "textfield",
+				"heading"           	=> __( "Title Text", "ts_visual_composer_extend" ),
+				"param_name"        	=> "title",
+				"value"             	=> "",
+				"admin_label"       	=> true,
+				"description"       	=> __( "Enter the title text string to be used for the flipboard effect.", "ts_visual_composer_extend" ),
+			),
+			array(
+				"type"              	=> "textfield",
+				"heading"           	=> __( "Start String", "ts_visual_composer_extend" ),
+				"param_name"        	=> "start",
+				"value"             	=> "",
+				"admin_label"       	=> true,
+				"description"       	=> __( "Enter an optional start text string to be used for the flipboard effect; only useful if a start delay has been applied.", "ts_visual_composer_extend" ),
+			),
+			array(
+				"type"              	=> "switch_button",
+				"heading"               => __( "Equalize Start and End", "ts_visual_composer_extend" ),
+				"param_name"            => "equalize",
+				"value"                 => "true",
+				"dependency"        	=> array( 'element' => "start", 'not_empty' => true ),
+				"description"           => __( "Switch the toggle if you want to equalize the length of the start string with the title string.", "ts_visual_composer_extend" ),
+			),
+			array(
+				"type"              	=> "switch_button",
+				"heading"               => __( "Shorten with Dots", "ts_visual_composer_extend" ),
+				"param_name"            => "dotted",
+				"value"                 => "true",
+				"dependency"        	=> array( 'element' => "equalize", 'value' => 'true' ),
+				"description"           => __( "Switch the toggle if you want to equalize the start string with trailing dots or just with a cutoff.", "ts_visual_composer_extend" ),
+			),
+			array(
+				"type"              	=> "switch_button",
+				"heading"               => __( "Use on Mobile", "ts_visual_composer_extend" ),
+				"param_name"            => "mobile",
+				"value"                 => "false",
+				"admin_label"			=> true,
+				"description"           => __( "Switch the toggle if you want to show the animation on mobile devices.", "ts_visual_composer_extend" ),
+			),
+			array(
+				"type"              	=> "dropdown",
+				"heading"           	=> __( "Alternative Wrapper", "ts_visual_composer_extend" ),
+				"param_name"        	=> "wrapper",
+				"width"             	=> 150,
+				"value"             	=> array(
+					__( "H1", "ts_visual_composer_extend" )                      	=> "h1",
+					__( "H2", "ts_visual_composer_extend" )                    		=> "h2",
+					__( "H3", "ts_visual_composer_extend" )                   		=> "h3",
+					__( "H4", "ts_visual_composer_extend" )                   		=> "h4",
+					__( "H5", "ts_visual_composer_extend" )                   		=> "h5",
+					__( "H6", "ts_visual_composer_extend" )                   		=> "h6",
+				),
+				"dependency"        	=> array( 'element' => "mobile", 'value' => 'false' ),
+				"description"       	=> __( "Select the alternative wrapper for the title to be used on mobile devices.", "ts_visual_composer_extend" )
+			),
+			// Flipboard Settings
+			array(
+				"type"              	=> "seperator",
+				"heading"           	=> "",
+				"param_name"        	=> "seperator_2",
+				"value"					=> "",
+				"seperator"             => "Flipboard Settings",
+				"description"       	=> "",
+				"group" 				=> "Flipboard Settings",
+			),
+			array(
+				"type"              	=> "dropdown",
+				"heading"           	=> __( "Flipboard Size", "ts_visual_composer_extend" ),
+				"param_name"        	=> "size",
+				"width"             	=> 150,
+				"value"             	=> array(
+					__( "Large", "ts_visual_composer_extend" )                      => "large",
+					__( "Medium", "ts_visual_composer_extend" )                    	=> "medium",
+					__( "Small", "ts_visual_composer_extend" )                   	=> "small",
+				),
+				"admin_label"       	=> true,
+				"description"       	=> __( "Select the size of the letters in the flipboard.", "ts_visual_composer_extend" ),
+				"group" 				=> "Flipboard Settings",
+			),
+			array(
+				"type"              	=> "dropdown",
+				"heading"           	=> __( "Flipboard Style", "ts_visual_composer_extend" ),
+				"param_name"        	=> "style",
+				"width"             	=> 150,
+				"value"             	=> array(
+					__( "Dark", "ts_visual_composer_extend" )                      	=> "dark",
+					__( "Light", "ts_visual_composer_extend" )                    	=> "light",
+				),
+				"admin_label"       	=> true,
+				"description"       	=> __( "Select the style of the letters in the flipboard.", "ts_visual_composer_extend" ),
+				"group" 				=> "Flipboard Settings",
+			),
+			array(
+				"type"              	=> "switch_button",
+				"heading"               => __( "Trigger on Viewport", "ts_visual_composer_extend" ),
+				"param_name"            => "viewport",
+				"value"                 => "true",
+				"admin_label"			=> true,
+				"description"           => __( "Switch the toggle if you want the animation to be triggered upon viewport entry.", "ts_visual_composer_extend" ),
+				"group" 				=> "Flipboard Settings",
+			),
+			array(
+				"type"                  => "nouislider",
+				"heading"               => __( "Start Delay", "ts_visual_composer_extend" ),
+				"param_name"            => "delay",
+				"value"                 => "0",
+				"min"                   => "0",
+				"max"                   => "10000",
+				"step"                  => "100",
+				"unit"                  => 'ms',
+				"description"           => __( "Define the start delay before the flipboard animation begins.", "ts_visual_composer_extend" ),
+				"group" 				=> "Flipboard Settings",
+			),
+			array(
+				"type"              	=> "nouislider",
+				"heading"           	=> __( "Flipboard Speed", "ts_visual_composer_extend" ),
+				"param_name"        	=> "speed",
+				"value"             	=> "3",
+				"min"               	=> "1",
+				"max"               	=> "10",
+				"step"              	=> "1",
+				"unit"              	=> '',
+				"admin_label"       	=> true,
+				"description"       	=> __( "Define the speed for the flipboard animation (the higher, the faster).", "ts_visual_composer_extend" ),
+				"group" 				=> "Flipboard Settings",
+			),				
+			array(
+				"type"              	=> "switch_button",
+				"heading"               => __( "Restart on Click", "ts_visual_composer_extend" ),
+				"param_name"            => "restart",
+				"value"                 => "false",
+				"admin_label"			=> true,
+				"description"           => __( "Switch the toggle if you want the animation to restart after clicking on the element.", "ts_visual_composer_extend" ),
+				"group" 				=> "Flipboard Settings",
+			),		
+			// Other Settings
+			array(
+				"type"              	=> "seperator",
+				"heading"           	=> "",
+				"param_name"        	=> "seperator_3",
+				"value"					=> "",
+				"seperator"             => "Other Settings",
+				"description"       	=> "",
+				"group" 				=> "Other Settings",
+			),
+			array(
+				"type"              	=> "nouislider",
+				"heading"           	=> __( "Margin: Top", "ts_visual_composer_extend" ),
+				"param_name"        	=> "margin_top",
+				"value"             	=> "0",
+				"min"               	=> "-50",
+				"max"               	=> "200",
+				"step"              	=> "1",
+				"unit"              	=> 'px',
+				"description"       	=> __( "Select the top margin for the element.", "ts_visual_composer_extend" ),
+				"group" 				=> "Other Settings",
+			),
+			array(
+				"type"              	=> "nouislider",
+				"heading"           	=> __( "Margin: Bottom", "ts_visual_composer_extend" ),
+				"param_name"        	=> "margin_bottom",
+				"value"             	=> "0",
+				"min"               	=> "-50",
+				"max"               	=> "200",
+				"step"              	=> "1",
+				"unit"              	=> 'px',
+				"description"       	=> __( "Select the bottom margin for the element.", "ts_visual_composer_extend" ),
+				"group" 				=> "Other Settings",
+			),
+			array(
+				"type"              	=> "textfield",
+				"heading"           	=> __( "Define ID Name", "ts_visual_composer_extend" ),
+				"param_name"        	=> "el_id",
+				"value"             	=> "",
+				"description"       	=> __( "Enter an unique ID for the element.", "ts_visual_composer_extend" ),
+				"group" 				=> "Other Settings",
+			),
+			array(
+				"type"              	=> "textfield",
+				"heading"           	=> __( "Extra Class Name", "ts_visual_composer_extend" ),
+				"param_name"        	=> "el_class",
+				"value"             	=> "",
+				"description"       	=> __( "Enter a class name for the element.", "ts_visual_composer_extend" ),
+				"group" 				=> "Other Settings",
+			),
+			// Load Custom CSS/JS File
+			array(
+				"type"              	=> "load_file",
+				"heading"           	=> "",
+				"param_name"        	=> "el_file",
+				"value"             	=> "",
+				"file_type"         	=> "js",
+				"file_path"         	=> "js/ts-visual-composer-extend-element.min.js",
+				"description"       	=> ""
+			),
+		)
+	);
+	
+	if ($VISUAL_COMPOSER_EXTENSIONS->TS_VCSC_VisualComposer_LeanMap == "true") {
+		return $VISUAL_COMPOSER_EXTENSIONS->TS_VCSC_VisualComposer_Element;
+	} else {			
+		vc_map($VISUAL_COMPOSER_EXTENSIONS->TS_VCSC_VisualComposer_Element);
+	}
+?>

@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravit Forms - List & Edit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-16 14:22+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ralf Fuhrmann <admin@specialpress.net>\n"
+"Language-Team: Ralf Fuhrmann <admin@specialpress.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: gravityforms_list-and-edit.class.php:290
+#: classes/gravityforms_datatables.gfapi.php:275
+#: classes/gravityforms_datatables.gfapi.php:277
+msgid "Change"
+msgstr "Bearbeiten"
+
+#: gravityforms_list-and-edit.class.php:293
+#: classes/gravityforms_datatables.gfapi.php:285
+#: classes/gravityforms_datatables.gfapi.php:287
+msgid "Delete"
+msgstr "Löschen"
+
+#: gravityforms_list-and-edit.class.php:296
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: gravityforms_list-and-edit.class.php:624
+msgid "disabled"
+msgstr "abgeshaltet"
+
+#: gravityforms_list-and-edit.class.php:625
+msgid "Icon button"
+msgstr "Icon Button"
+
+#: gravityforms_list-and-edit.class.php:626
+msgid "Text button"
+msgstr "Text Button"
+
+#: gravityforms_list-and-edit.class.php:646
+msgid "Enable AddNew Button"
+msgstr "Hinzufügen Button aktivieren"
+
+#: gravityforms_list-and-edit.class.php:649
+msgid "Enable a text or an icon button to add a record."
+msgstr ""
+"Aktiviere einen Icon- oder Text-Button zum Hinzufügen eines Datensatzes."
+
+#: gravityforms_list-and-edit.class.php:670
+msgid "Enable Change Button"
+msgstr "Bearbeiten Button aktivieren"
+
+#: gravityforms_list-and-edit.class.php:673
+msgid "Enable a text or an icon button to change a record."
+msgstr ""
+"Aktiviere einen Icon- oder Text-Button zum Bearbeiten eines Datensatzes."
+
+#: gravityforms_list-and-edit.class.php:694
+msgid "Enable Delete Button"
+msgstr "Löschen Button aktivieren"
+
+#: gravityforms_list-and-edit.class.php:697
+msgid "Enable a text or an icon button to delete a record."
+msgstr "Aktiviere einen Icon- oder Text-Button zum Löschen eines Datensatzes."
+
+#: gravityforms_list-and-edit.class.php:706
+msgid "everyone"
+msgstr "jeden"
+
+#: gravityforms_list-and-edit.class.php:707
+msgid "logged in"
+msgstr "angemeldete "
+
+#: gravityforms_list-and-edit.class.php:708
+msgid "entry creator"
+msgstr "Eintrags Erzeuger"
+
+#: gravityforms_list-and-edit.class.php:709
+msgid "only to the admin"
+msgstr "nur dem Administrator"
+
+#: gravityforms_list-and-edit.class.php:725
+msgid "Records workable by "
+msgstr "Datensätze bearbeitbar von"
+
+#: gravityforms_list-and-edit.class.php:728
+msgid "From wich users to entries should be workable"
+msgstr "Welchen Anwendern sollen die Einträge bearbeiten können"
+
+#: gravityforms_list-and-edit.class.php:738
+msgid "Page to the gfEdit destination"
+msgstr "Seite auf der das Formular eingebettet ist"
+
+#: gravityforms_list-and-edit.class.php:739
+msgid "-Not Editable-"
+msgstr "-Nicht Editierbar-"
+
+#: gravityforms_list-and-edit.class.php:791
+#: gravityforms_list-and-edit.class.php:830
+msgid "on all events"
+msgstr "Alle Ereignisse"
+
+#: gravityforms_list-and-edit.class.php:792
+#: gravityforms_list-and-edit.class.php:831
+msgid "only on addnew"
+msgstr "nur beim Hinzufügen"
+
+#: gravityforms_list-and-edit.class.php:793
+#: gravityforms_list-and-edit.class.php:832
+msgid "only on change"
+msgstr "nur beim Bearbeiten"
+
+#: gravityforms_list-and-edit.class.php:794
+#: gravityforms_list-and-edit.class.php:833
+msgid "only on delete"
+msgstr "nur beim Löschen"
+
+#: gravityforms_list-and-edit.class.php:811
+msgid "send confirmation"
+msgstr "Bestätigung senden "
+
+#: gravityforms_list-and-edit.class.php:849
+msgid "send notification"
+msgstr "Benachrichtigung senden"
+
+#~ msgid "No form found."
+#~ msgstr "Kein Formular gefunden"
+
+#~ msgid "You must be an admin to view this list."
+#~ msgstr "Zur Anzeige der Liste muss Du ein Administrator seins"
+
+#~ msgid "You must be logged in to view this list."
+#~ msgstr "Zur Anzeige der Liste muss Du angemeldet sein."
+
+#~ msgid "There are no fields to display"
+#~ msgstr "Keine Felder zur Anzeige gefunden"
+
+#~ msgid "Addnew"
+#~ msgstr "Hinzufügen"
+
+#~ msgid "Gravitylist Order"
+#~ msgstr "Gravitylist Reihenfolge"
+
+#~ msgid "all"
+#~ msgstr "alle"
+
+#~ msgid "Show records to "
+#~ msgstr "Einträge anzeigen für"
+
+#~ msgid "Enable Paging"
+#~ msgstr "Seitenansicht aktivieren"
+
+#~ msgid "Enable the Paging-Mode at the DataTable"
+#~ msgstr "Aktiviere die Seitenansicht in der DataTable"
+
+#~ msgid "Enable ordering"
+#~ msgstr "Sortierung aktivieren"
+
+#~ msgid "Enable the Ordering-Mode at the DataTable"
+#~ msgstr "Aktiviere die Sortierung in der DataTable"
+
+#~ msgid "Enable Searching"
+#~ msgstr "Suche aktivieren"
+
+#~ msgid "Enable the Search-Box at the DataTable"
+#~ msgstr "Aktiviere die Suchfunktion in der DataTable"
+
+#~ msgid "Update"
+#~ msgstr "Aktualisieren"
+
+#~ msgid "Search"
+#~ msgstr "Suchen"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "View"
+#~ msgstr "Ansehen"
+
+#~ msgid "You must be logged in."
+#~ msgstr "Du must angemeldet sein."
+
+#~ msgid "Show Field in Entry List"
+#~ msgstr "Feld in der Liste anzeigen"
+
+#~ msgid "Number of Rows"
+#~ msgstr "Anzahl der Zeilen"
+
+#~ msgid "CSS Class Name"
+#~ msgstr "CSS Klassen Name"
+
+#~ msgid "Display Lead-Id"
+#~ msgstr "Lead-Id Anzeigen"
+
+#~ msgid "Display Lead-Id as first column at the Entry-List"
+#~ msgstr "Lead-Id als erste Spalte der Liste anzeigen"
+
+#~ msgid "Require user to be logged in"
+#~ msgstr "Benutzer muss angemeldet sein"
+
+#~ msgid "Show records to all users or only to the record creator"
+#~ msgstr "Es werden alle Einträge angezeigt"
+
+#~ msgid "Enable edit mode for this form"
+#~ msgstr "Edit-Modus für dieses Formular aktivieren"
+
+#~ msgid "Enable an 'View' Button for each entry"
+#~ msgstr "Aktiviert einen 'Ansehen' Button für jeden Eintrag"
+
+#~ msgid "Enable an 'Delete' Button for each entry"
+#~ msgstr "Aktiviert einen 'Löschen' Button für jeden Eintrag"
+
+#~ msgid "Enable an 'AddNew' Button at the bottom of the list"
+#~ msgstr "Aktiviert einen 'Hinzufügen' Button für jeden Eintrag"
+
+#~ msgid "Enable tQuery support"
+#~ msgstr "tQuery Support aktivieren"
+
+#~ msgid "Display tQuery search"
+#~ msgstr "tQuery Suche anzeigen"
+
+#~ msgid "Show the tquery search box"
+#~ msgstr "Zeigt die tQuery Suchbox an"
+
+#~ msgid "Display tQuery pagination"
+#~ msgstr "tQuery Seiten-Navigation anzeigen"
+
+#~ msgid "Show the tquery pagination (the row setting will be used)"
+#~ msgstr ""
+#~ "Zeigt di tQuery Seiten-Navigation an (es wird die Einstellung aus 'Anzahl "
+#~ "der Zeilen' vewendet)"
+
+#~ msgid "only on update"
+#~ msgstr "nur beim Bearbeiten"
+
+#~ msgid "on insert and update"
+#~ msgstr "beim Erstellen und Bearbeiten"
+
+#~ msgid "SAP User Connect Settings"
+#~ msgstr "SAP User Connect Einstellungen"
+
+#~ msgid "Connect Settings"
+#~ msgstr "Verbindungs Parameter"
+
+#~ msgid "Plugin Settings"
+#~ msgstr "Plugin Einstellungen"
+
+#~ msgid "Only SAP-Users could register"
+#~ msgstr "Nur SAP-Benutzer dürfen sich Registrieren"
+
+#~ msgid "Only SAP-Users could login"
+#~ msgstr "Nur SAP-Benutzer dürfen sich Anmelden"
+
+#~ msgid "Exclude Users"
+#~ msgstr "Benutzer ausschliessen"
+
+#~ msgid ""
+#~ "Add the Usernames that should not be checked against SAP(e.g. the ADMIN). "
+#~ "Seperate the usernames with a comma"
+#~ msgstr ""
+#~ "Tragen Sie hier die Benutzernamen ein, die beim Anmelden NICHT gegen SAP "
+#~ "geprüft werden sollen (z.b. der Wordpress Admin). Bitte trennen Sie die "
+#~ "Benutzernamen mit einem Komma."
+
+#~ msgid "Please Note !<br />Your username will be checked against SAP."
+#~ msgstr "Achtung !<br />Der Benutzername wird gegen SAP geprüft."
+
+#~ msgid ""
+#~ "Username <strong>%s</strong> doesn't exist in SAP. <br />Please use your "
+#~ "SAP Username to Register."
+#~ msgstr ""
+#~ "Benutzername <strong>%s</strong> existiert nicht in SAP. <br />Bitte "
+#~ "verwenden Sie Ihren SAP-Benutzernamen zur Registrierung."
+
+#~ msgid ""
+#~ "Username <strong>%s</strong> doesn't exist in SAP. <br />Please use your "
+#~ "SAP Username to Login."
+#~ msgstr ""
+#~ "Benutzername <strong>%s</strong> existiert nicht in SAP. <br />Bitte "
+#~ "verwenden Sie Ihren SAP-Benutzernamen zur Anmeldung"
+
+#~ msgid "Determine Details for an User"
+#~ msgstr "Zeigt Details zum Benutzer an"
+
+#~ msgid "Not a SAP User"
+#~ msgstr "Kein SAP Benutzer"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"

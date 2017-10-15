@@ -1,0 +1,132 @@
+/**
+* Standard Layouts
+*/
+.pum-alm-form.layout-standard {
+
+  .pum-field > label {
+    margin-bottom: .25em;
+    display: block;
+  }
+
+  .pum-field-wp-submit {
+    text-align: right;
+    clear: both;
+    overflow: auto;
+
+    .pum-responsive-nano &,
+    .pum-responsive-micro & {
+
+      button {
+        width: 100%;
+        display: block;
+
+
+        text-align: center;
+
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      button {
+        width: 100%;
+        display: block;
+
+
+        text-align: center;
+
+      }
+    }
+  }
+
+
+
+
+  &.pum-registration-form {
+
+    .pum-field-user_login,
+    .pum-field-user_pass,
+    .pum-field-user_pass2,
+    .pum-field-user_email,
+    .pum-field-user_email2 {
+      display: inline-block;
+      width: 49%;
+      margin-right: 2%;
+    }
+
+    .pum-field-user_pass2,
+    .pum-field-user_email2 {
+      float: right;
+      margin-right: 0;
+    }
+
+    .pum-responsive-nano &,
+    .pum-responsive-micro & {
+
+      .pum-field-user_login,
+      .pum-field-user_pass,
+      .pum-field-user_pass2,
+      .pum-field-user_email,
+      .pum-field-user_email2 {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .pum-field-user_login,
+      .pum-field-user_pass,
+      .pum-field-user_pass2,
+      .pum-field-user_email,
+      .pum-field-user_email2 {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.pum-login-form {
+
+    .pum-field-user_login,
+    .pum-field-user_pass {
+      display: inline-block;
+      width: 49%;
+      margin-right: 2%;
+    }
+
+    .pum-field-user_pass {
+      float: right;
+      margin-right: 0;
+    }
+
+    .pum-field-rememberme {
+      float: left;
+      display: inline-block;
+      line-height: 2em;
+
+      label {
+        display: inline;
+      }
+    }
+
+    .pum-responsive-nano &,
+    .pum-responsive-micro & {
+      .pum-field-user_login,
+      .pum-field-user_pass {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .pum-field-user_login,
+      .pum-field-user_pass {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+      }
+    }
+  }
+}

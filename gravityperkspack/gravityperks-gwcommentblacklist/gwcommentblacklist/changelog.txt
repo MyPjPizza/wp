@@ -1,0 +1,6 @@
+
+# Changelog
+
+## 1.1
+
+    - Updated to take advantage of UI changes made in GF 1.7

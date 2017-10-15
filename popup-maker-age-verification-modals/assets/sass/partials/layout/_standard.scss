@@ -1,0 +1,154 @@
+/**
+* Standard Layouts
+*/
+.pum-age-form.layout-standard {
+
+  /**
+  * Enter / Exit Form
+  */
+  &[data-type="enterexit"] {
+    .pum-age-buttons {
+      .pum-field {
+        display: inline-block;
+        margin-right: 8px;
+
+        &::after {
+          content : "|";
+          display: inline-block;
+          font-size: 1.5em;
+          margin-left: 8px;
+          vertical-align: middle;
+        }
+
+        &:last-child {
+          margin-right: 0;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        button {
+          vertical-align: middle;
+          min-width: 25%;
+        }
+
+      }
+    }
+  }
+
+  /**
+  * Birthdate Form
+  */
+  &[data-type="birthdate"] {
+    label {
+      display: block;
+      margin: 0 0 8px;
+      text-align: left;
+
+      @media only screen and (max-width: 320px) {
+        text-align: inherit;
+      }
+
+    }
+
+    input, select {
+      min-width: 100%;
+      @media only screen and (max-width: 320px) {
+        text-align: inherit;
+      }
+    }
+
+    .pum-age-form-fields,
+    .pum-field,
+    .pum-field-button {
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: 320px) {
+      .pum-field-button {
+        display: block;
+      }
+    }
+
+    .pum-field,
+    .pum-age-form-fields {
+      margin-bottom: 8px;
+      margin-right: 8px;
+
+      @media only screen and (max-width: 320px) {
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      .pum-field,
+      .pum-age-form-fields {
+        margin-bottom: 0;
+        @media only screen and (max-width: 320px) {
+          margin-bottom: 8px;
+
+          &.pum-field-button {
+            margin-bottom: 0;
+
+            button {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .pum-field:last-child {
+        margin-right: 0;
+    }
+
+    .pum-age-form-fields {
+      @media only screen and (max-width: 320px) {
+        display: block;
+      }
+    }
+
+
+    .pum-date-input {
+      .pum-field,
+      .pum-field-button {
+        display: inline-block;
+      }
+      @media only screen and (max-width: 320px) {
+        .pum-field,
+        .pum-field-button {
+          display: block;
+        }
+      }
+    }
+
+    // HTML5 Fallback Inputs
+    .pum-date-input-fallback {
+
+      @media only screen and (max-width: 320px) {
+        margin-right: 0;
+      }
+
+
+      label {
+        text-align: center;
+        padding: 0 5px;
+      }
+
+      @media only screen and (max-width: 320px) {
+        .pum-field {
+          width: 24%;
+          margin-right: 1%;
+
+          &:last-child {
+            width: 45%;
+            margin-right: 0;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,545 @@
+# Copyright (C) 2016 popup-maker-ajax-login-modals
+# This file is distributed under the same license as the popup-maker-ajax-login-modals package.
+msgid ""
+msgstr ""
+"Project-Id-Version: popup-maker-ajax-login-modals\n"
+"Report-Msgid-Bugs-To: https://wppopupmaker.com/support\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Language-Team: WP Popup Maker <support@wppopupmaker.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: classes/Admin.php:29
+msgid "Where should form errors be shown?"
+msgstr ""
+
+#: classes/Admin.php:32
+msgid "Top"
+msgstr ""
+
+#: classes/Admin.php:33
+msgid "Bottom"
+msgstr ""
+
+#: classes/Admin.php:39
+msgid "Google Recaptcha Site Key"
+msgstr ""
+
+#: classes/Admin.php:40, classes/Admin.php:46
+msgid ""
+msgstr ""
+
+#: classes/Admin.php:45
+msgid "Google Recaptcha Secret Key"
+msgstr ""
+
+#: classes/Admin.php:54
+msgid "Global Login Cookie Name"
+msgstr ""
+
+#: classes/Admin.php:55
+msgid "This cookie will be set when any user logs in, even if not in a popup."
+msgstr ""
+
+#: classes/Ajax.php:47
+msgid "Missing form arguments."
+msgstr ""
+
+#: classes/Ajax.php:94
+msgid "Login Successful!"
+msgstr ""
+
+#: classes/Ajax.php:155
+msgid "Registration complete."
+msgstr ""
+
+#: classes/Ajax.php:160
+msgid "Please check your e-mail."
+msgstr ""
+
+#: classes/Cookies.php:20
+msgid "Login Successful"
+msgstr ""
+
+#: classes/Cookies.php:26
+msgid "Registration Successful"
+msgstr ""
+
+#: classes/Forms.php:171, classes/Forms.php:179, classes/Forms.php:302
+msgid "Username"
+msgstr ""
+
+#: classes/Forms.php:172, classes/Forms.php:180
+msgid "Email"
+msgstr ""
+
+#: classes/Forms.php:173, classes/Forms.php:181, classes/Shortcode/Form/Registration.php:87, classes/Shortcode/Form/Registration.php:125, classes/Shortcode/Form/Registration.php:197, classes/Shortcode/Form/Registration.php:205
+msgid "Confirm Email"
+msgstr ""
+
+#: classes/Forms.php:174, classes/Forms.php:182
+msgid "Password"
+msgstr ""
+
+#: classes/Forms.php:175, classes/Forms.php:183, classes/Shortcode/Form/Registration.php:97, classes/Shortcode/Form/Registration.php:135, classes/Shortcode/Form/Registration.php:199, classes/Shortcode/Form/Registration.php:207
+msgid "Confirm Password"
+msgstr ""
+
+#: classes/Forms.php:176
+msgid "Register"
+msgstr ""
+
+#: classes/Forms.php:298
+msgid "Username or E-mail"
+msgstr ""
+
+#: classes/Forms.php:299
+msgid "Get New Password"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:21, classes/Shortcode/Form/Login.php:203
+msgid "AJAX Login Form"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:25
+msgid "A customizable AJAX Login Form."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:34, classes/Shortcode/Form/Recovery.php:34, classes/Shortcode/Form/Registration.php:34
+msgid "General"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:35, classes/Shortcode/Form/Recovery.php:35, classes/Shortcode/Form/Registration.php:35
+msgid "Labels"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:36, classes/Shortcode/Form/Recovery.php:36, classes/Shortcode/Form/Registration.php:36
+msgid "Placeholders"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:37, classes/Shortcode/Form/Recovery.php:37, classes/Shortcode/Form/Registration.php:37
+msgid "Success"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:45
+msgid "Disable Remember Me"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:46
+msgid "Disable the remember me option."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:53, classes/Shortcode/Form/Recovery.php:46, classes/Shortcode/Form/Registration.php:71
+msgid "Disable Labels"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:54, classes/Shortcode/Form/Recovery.php:47, classes/Shortcode/Form/Registration.php:72
+msgid "Disables the display of field labels."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:60, classes/Shortcode/Form/Recovery.php:53, classes/Shortcode/Form/Registration.php:78
+msgid "Label for the username field."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:65, classes/Shortcode/Form/Registration.php:93
+msgid "Label for the password field."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:70
+msgid "Label for the remember me field."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:75
+msgid "Label for the login button."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:82, classes/Shortcode/Form/Recovery.php:65, classes/Shortcode/Form/Registration.php:109
+msgid "Disable Placeholders"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:83, classes/Shortcode/Form/Recovery.php:66, classes/Shortcode/Form/Registration.php:110
+msgid "Disables the display of field placeholders."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:89, classes/Shortcode/Form/Recovery.php:72
+msgid "Placeholder text for the username field."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:94
+msgid "Placeholder text for the password field."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:100, classes/Shortcode/Form/Recovery.php:78, classes/Shortcode/Form/Registration.php:148
+msgid "Disable Redirect"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:101, classes/Shortcode/Form/Recovery.php:79
+msgid "Disables refreshing the page or redirecting after success."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:106, classes/Shortcode/Form/Recovery.php:84, classes/Shortcode/Form/Registration.php:154
+msgid "Redirect URL"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:107, classes/Shortcode/Form/Recovery.php:85
+msgid "Leave blank to refresh, or enter a url that users will be taken to after success."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:112, classes/Shortcode/Form/Recovery.php:90, classes/Shortcode/Form/Registration.php:160
+msgid "Auto Close"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:113, classes/Shortcode/Form/Recovery.php:91, classes/Shortcode/Form/Registration.php:161
+msgid "Enables the auto closing of the popup after success."
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:118, classes/Shortcode/Form/Recovery.php:96, classes/Shortcode/Form/Registration.php:166, templates/admin/metabox/alm.php:69, templates/admin/metabox/alm.php:141, templates/admin/metabox/alm.php:194
+msgid "Auto Close Delay"
+msgstr ""
+
+#: classes/Shortcode/Form/Login.php:119, classes/Shortcode/Form/Recovery.php:97, classes/Shortcode/Form/Registration.php:167
+msgid "This is the delay before the popup closes & redirects occur."
+msgstr ""
+
+#: classes/Shortcode/Form/Recovery.php:21, classes/Shortcode/Form/Recovery.php:162
+msgid "AJAX Recovery Form"
+msgstr ""
+
+#: classes/Shortcode/Form/Recovery.php:25
+msgid "A customizable AJAX Recovery Form."
+msgstr ""
+
+#: classes/Shortcode/Form/Recovery.php:58, classes/Shortcode/Form/Registration.php:103
+msgid "Label for the submit button."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:21, classes/Shortcode/Form/Registration.php:250
+msgid "AJAX Registration Form"
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:25
+msgid "A customizable AJAX Registration Form."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:45
+msgid "Force users to confirm their email?."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:46
+msgid "Adds a confirm email field & requires matching emails."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:51
+msgid "Allow users to create their own password?."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:52
+msgid "Adds a password field & requires users to enter their own password."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:57
+msgid "Force users to confirm their password?"
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:58
+msgid "Adds a confirm password field & requires matching passwords."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:63
+msgid "Add Google ReCaptcha."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:64
+msgid "Adds a Google ReCaptcha field to the form."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:83
+msgid "Label for the email field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:88
+msgid "Label for the confirm email field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:98
+msgid "Label for the confirm password field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:102
+msgid "Submit Button"
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:116
+msgid "Placeholder for the username field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:121
+msgid "Placeholder for the email field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:126
+msgid "Placeholder for the confirm email field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:131
+msgid "Placeholder for the password field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:136
+msgid "Placeholder for the confirm password field."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:142
+msgid "Automatically login After Registration."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:143
+msgid "User will be immediately logged in after successful registration."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:149
+msgid "Disables refreshing the page or redirecting after login."
+msgstr ""
+
+#: classes/Shortcode/Form/Registration.php:155
+msgid "Leave blank to refresh, or enter a url that users will be taken to after login."
+msgstr ""
+
+#: classes/Site/Assets.php:36
+msgid "Invalid form type"
+msgstr ""
+
+#: classes/Site/Assets.php:38, classes/Validation.php:19, classes/Validation.php:111
+msgid "<strong>ERROR</strong>: Please enter your username or email."
+msgstr ""
+
+#: classes/Site/Assets.php:39, classes/Validation.php:23
+msgid "<strong>ERROR</strong>: Please enter your password."
+msgstr ""
+
+#: classes/Site/Assets.php:40
+msgid "<strong>ERROR</strong>: Please confirm your email."
+msgstr ""
+
+#: classes/Site/Assets.php:41
+msgid "<strong>ERROR</strong>: Your emails do not match."
+msgstr ""
+
+#: classes/Site/Assets.php:42
+msgid "<strong>ERROR</strong>: Your email address appears invalid."
+msgstr ""
+
+#: classes/Site/Assets.php:43
+msgid "<strong>ERROR</strong>: Please confirm your password."
+msgstr ""
+
+#: classes/Site/Assets.php:44
+msgid "<strong>ERROR</strong>: Your passwords do not match."
+msgstr ""
+
+#: classes/Site/Assets.php:45
+msgid "<strong>ERROR</strong>: You must complete the captcha."
+msgstr ""
+
+#: classes/Site/Assets.php:46
+msgid "An error has occurred. Please try again."
+msgstr ""
+
+#: classes/Triggers.php:21, templates/admin/metabox/alm.php:28
+msgid "Force Login"
+msgstr ""
+
+#: classes/Triggers.php:22
+msgid "Force Login Settings"
+msgstr ""
+
+#: classes/Triggers.php:25
+msgid "Click Blocking"
+msgstr ""
+
+#: classes/Triggers.php:26
+msgid "Click Blocking Settings"
+msgstr ""
+
+#: classes/Triggers.php:29
+msgid "Login Links"
+msgstr ""
+
+#: classes/Triggers.php:30
+msgid "Login Links Settings"
+msgstr ""
+
+#: classes/Triggers.php:49
+msgid "Action Requirements?"
+msgstr ""
+
+#: classes/Triggers.php:50
+msgid "Each item checked will be required to acitvate the clicked item."
+msgstr ""
+
+#: classes/Triggers.php:63
+msgid "Target Which WordPress Links?"
+msgstr ""
+
+#: classes/Triggers.php:64
+msgid "This will turn these links into popup triggers."
+msgstr ""
+
+#: classes/Triggers.php:66, templates/admin/metabox/alm.php:7
+msgid "Login"
+msgstr ""
+
+#: classes/Triggers.php:67, templates/admin/metabox/alm.php:10
+msgid "Registration"
+msgstr ""
+
+#: classes/Triggers.php:68, templates/admin/metabox/alm.php:13
+msgid "Recovery"
+msgstr ""
+
+#: classes/Triggers.php:79
+msgid "Use the Popup Maker shortcode button %s on the editor toolbar to insert and customize your login forms."
+msgstr ""
+
+#: classes/Triggers.php:84
+msgid "If this is enabled the popup will be disabled entirely if the user is logged in."
+msgstr ""
+
+#: includes/template-functions.php:30
+msgid "Already have an account?"
+msgstr ""
+
+#: includes/template-functions.php:36
+msgid "Don't have an account?"
+msgstr ""
+
+#: includes/template-functions.php:41
+msgid "Click here"
+msgstr ""
+
+#: popup-maker-ajax-login-modals.php:138
+msgid "AJAX Login Modals"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:21
+msgid "Enable AJAX Login Modals"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:24
+msgid "Checking this will enable login modal functionality."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:31
+msgid "Checking this will force users to login before they can close the modal."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:35
+msgid "Block Action"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:38
+msgid "Checking this will force users to login before clicking targeted buttons & links."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:42
+msgid "Allow Remember User?"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:45
+msgid "Checking this will allow users to use remember me function."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:49
+msgid "Disable Redirect after Login"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:52
+msgid "Checking this will not refresh the page after login. This may not work for situations, things like admin bar cannot be shown without refresh."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:58
+msgid "Login Redirect URL"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:63
+msgid "If you want to redirect to another page after login enter the url here. Leaving blank will keep user on the same page."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:83, templates/admin/metabox/alm.php:155, templates/admin/metabox/alm.php:208
+msgid "This is the delay before the popup closes & redirect occurs."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:96
+msgid "Enable Registration Modal"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:99
+msgid "Checking this will enable registration modal functionality."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:102
+msgid "Site registration is currently closed. This must be enabled for registration modal functionality to work."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:107
+msgid "User created passwords?"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:110
+msgid "Checking this will allow the user to enter their own password. Otherwise it will create and send them a unique password."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:114
+msgid "Login After Registration?"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:117
+msgid "Checking this will log the user in automatically after registration."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:121
+msgid "Disable Redirect after Regitration"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:124
+msgid "Checking this will not refresh the page after registration. This may not work for situations, things like admin bar cannot be shown without refresh."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:130
+msgid "Registration Redirect URL"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:135
+msgid "If you want to redirect to another page after registration enter the url here. Leaving blank will keep user on the same page."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:167
+msgid "Enable Password Recovery Modal"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:170
+msgid "Checking this will enable password recovery modal functionality."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:174
+msgid "Disable Redirect after Recovery"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:177
+msgid "Checking this will not refresh the page after recovery. This may not work for situations, things like admin bar cannot be shown without refresh."
+msgstr ""
+
+#: templates/admin/metabox/alm.php:183
+msgid "Recovery Redirect URL"
+msgstr ""
+
+#: templates/admin/metabox/alm.php:188
+msgid "If you want to redirect to another page after password recovery enter the url here. Leaving blank will keep user on the same page."
+msgstr ""

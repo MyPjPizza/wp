@@ -1,0 +1,251 @@
+Mar 1, 2016 - version 3.4.6
+   - Improvement: add autoplay option for the video in the Video Cover element.
+   - Fixed: Home Slider not showing.
+
+Feb 27, 2016 - version 3.4.6
+   - New: Accordion Cover, help you to add image list with lightbox support
+
+Jan 10, 2016 - version 3.4.5
+   - New: Home Slider, help you to add full width slider easily in homepage
+   - Improvement: add new style option for the Profile Panel, now you can display avatar and title on the header image, and text beside the avatar.
+   - Improvement: auto delay slideshow now is loop in the Carousel element
+
+Dec 17, 2015 - version 3.4.4
+   - New: Testimonial List, help you to add testimonial list with auto delay scroll to view slideshow
+   - Fixed: play button can't click in the Video Cover element's popup lightbox
+   - Some other small fix.
+
+Nov 30, 2015 - version 3.4.3
+   - New: Color Block, help you to add an image besides a color block with text
+   - Fixed: broken link of the Draggable Timeline content in the small screen device
+
+Nov 20, 2015 - version 3.4.2.1
+   - Fixed: a little bug introduced by the new element (The Carousel Gallery may not display properly)
+
+Nov 15, 2015 - version 3.4.2
+   - New: Cover Slider, help you to add image covers with caption easily
+   - Improvement: add alt attribute to the image in iHover element
+
+Oct 13, 2015 - version 3.4.1.2
+   - Improvement: compatible with Visual Composer 4.8+
+
+Oct 6, 2015 - version 3.4.1.1
+   - Improvement: add option for displaying which tooltip when page is loaded in the HotSpot element, HotSpot element compatible with latest Visual Composer 4.7+
+   - Improvement: add option for not resize the images in the Carousel element (fixed the problem that some server not compatible with the image resizing)
+
+Sep 3, 2015 - version 3.4.1
+   - New: Avatar with Popup, help you to add tooltip content easily
+   - Improvement: add start number option for the number icon in the HotSpot element
+
+Aug 25, 2015 - version 3.4.0
+   - Fixed: each link for the icon may not working in Profile Card
+   - Fixed: avatar image may not displayed in Flip Box and Cube Box
+   - Improvement: drag icon to update position feature (in Front Editor) in HotSpot now compatible with VC 4.7
+
+Jun 30, 2015 - version 3.3.9
+   - New: Vector Card (Card with diagonal)
+   - Improvement: make all elements compatible with upcoming Visual Composer 4.6
+   - Fixed: Title size not working in Cube Box
+   - Fixed: Images may not displayed in the Thumbnail Caption element
+
+May 31, 2015 - version 3.3.8
+   - New: Gradient Box (Content with image or icon)
+
+May 16, 2015 - version 3.3.7
+   - New: Video Cover (lightbox YouTube or Vimeo video)
+   - New: Stack Block (Place any content inside it)
+   - Improvement: add alt attribute to the image in the Carousel Gallery element
+   - Improvement: remove the mistake typing effect, add stop typing at the end option in the Type Writer element
+   - Fixed: popup content overflow may not hidden in Draggable Timeline
+
+Apr 28, 2015 - version 3.3.6
+   - Fixed: layout before all images are loaded option not working properly(images stacked) in Masonry Gallery.
+   - Improvement: add full size background image option for the Flip Box and Cube Box
+   - Improvement: add display all tooltips by default option for HotSpot element.
+   - Other: remove blank [accordiondesc] in Image Accordion, update icon font size from 48px to 32 px in Profile Panel.
+
+Apr 11, 2015 - version 3.3.5
+   - New: Profile Panel (with avatar and text)
+   - Improvement: Add arrow size option, element shape option to the Image with Arrow element. Make the text align center in the element.
+
+Apr 3, 2015 - version 3.3.4
+   - New: Image Accordion
+   - Fixed: arrow missing in Stack Gallery
+   - Improvement: image resize option of Image with Arrow element and Compare Slider element, you can use the original image now if your server doesn't work properly with image resize function
+
+Mar 27, 2015 - version 3.3.3
+   - New: Image Overlay 2
+   - Fixed: Before After add-on dragging function may drag other element in same page
+   - Fixed: Carouse & Gallery add-on arrow jump when clicking on it
+   - Updated: Font Awesome update to 4.3
+   - Updated: Compare Slider backend icon
+   - Improvement: add speed, cover ratio option to the Parallax
+
+Mar 12, 2015 - version 3.3.2
+   - New: Compare Slider (Image slider with menu navigation under)
+   - Fixed: Update some description and fix wp_enqueue_script etc
+
+Mar 09, 2015 - version 3.3.1
+   - New: Before & After (a image comparison slider)
+   - Added: add position option(Fixed or absolute) for the Depth Modal, the absolute position support long content in small screen
+   - Improvement: update the tooltipster tooltip js file in App Mockup, Stack Gallery, Side by Side to the minified one.
+
+Feb 28, 2015 - version 3.3.0
+   - New: Banner Block
+   - Improvement: update (image and ribbon) link to VC built-in link for the Ribbon element (note: you may have to update the exist link due to the API change)
+   - Improvement: text color, container background color, margin-top option for the Ribbon element
+   - Improvement: add Extra class name option for the Flip Box
+   - Fixed: Testimonial Carousel default setup not display properly (stacked)
+
+
+Feb 08, 2015 - version 3.2.9
+   - Introduce new element: Flip Box
+   - Fix extra class for the container of FullScreen Intro element
+   - Fix some typo
+
+
+Jan 25, 2015 - version 3.2.8
+   - Add Icon Picker for the Sticker, Cube Box, Side by Side, Separator, Material Card (available after Visual Composer version 4.4), now you can add icon more intuitively. Note, you may have to re-add the icon in some element due to the code change, other data will be safe.
+   - Icon Library (for the Icon Picker) included: Font Awesome, Open Iconic, Typicons, Entypo, and Linecons. So there are more icon options after this update.
+   - Introduce new element: Image Overlay (include Icon Picker too)
+   - Fix some compatibility with VC 4.4
+
+Jan 17, 2015 - version 3.2.7
+   - Introduce new element: Type Writer
+   - Introduce new element: Sticker
+   - Fix popup video not stop when close the modal in Depth Modal element
+   - Fix default display number in Figure Navigation
+   - Fix the add-on icons doesn't display properly in the upcoming VC 4.4
+   - Remove duplicate code, update description etc
+
+Jan 7, 2015 - version 3.2.6
+   - Introduce new element: Side by Side
+   - Remove the default tooltip content in the Carousel & Gallery element
+
+Dec 26, 2014 - version 3.2.5
+   - Introduce new element: Cube Box
+   - Update some icons of the add-on in the backend
+
+Dec 18, 2014 - version 3.2.4
+   - Introduce new element: (Google Style) Material Card
+   - Fix some typo
+   - Fix return to the top when click a Depth Modal button
+
+Dec 4, 2014 - version 3.2.3
+   - Introduce new element: Separator with Icon
+   - Update retina icons for each element in the admin backend
+   - Fix Tab content unexpected string with the content start with HTML tag
+   - Fix Stack Gallery no tooltip option not working
+
+29.11.2014 - version 3.2.2
+   - Fix HotSpot number or FA icon may be align vertical middle in some theme
+   - Fix Accordion content unexpected string with the content start with HTML tag
+
+26.11.2014 - version 3.2.1
+   - Add different icon for each add-on in the backend
+
+26.11.2014 - version 3.2
+   - Add new options to the HotSpot add-on: now the hotspot icon can be in numbers or Font Awesome icon
+   - Update the HotSpot, Tabs, Accordion wrap tag, make it more compatible with other shortcode
+   - Add new option to the Accordion, now you can choose to display first accordion by default
+   - Add new display option to the Scroll Notification, now you can choose to display the notification by default, hidden when user scrolling. Fix the auto delay second in the setting too
+
+18.11.2014 - version 3.1
+   - Update the HotSpot add-on: now you can drag icon to update it's position in the frontend editor
+
+15.11.2014 - version 3.0
+   - Add new add-on to the bundle: Page Transition (58 different animations)
+   - Fix special character error in the hotspot tooltip
+
+10.11.2014 - version 2.9
+   - Add new add-on to the bundle: Fullscreen Intro (help you to add a 'scroll to view' header)
+
+06.11.2014 - version 2.8
+   - Add new add-on to the bundle: Thumbnail with Caption
+   - Remove add-on from bundle: Animate Text (Users do not use it often)
+   - Increase the z-index of the lightbox, now it will overlay the menu in most of the themes.
+   - Fix some color, position issue in some add-ons
+
+25.10.2014 - version 2.7
+   - Add new add-on to the bundle: Draggable Timeline
+
+18.10.2014 - version 2.6.1
+   - Fix the jQuery easing missing in the Metro Carousel add-on (updated file:metrocarousel/vc-extensions-metrocarousel.php)
+   - Remove the Timeline add-on temporarily for license confusing
+
+16.10.2014 - version 2.6
+   - Add new add-on to the bundle: Metro Carousel and Tile (with slideshow and lightbox)
+
+10.10.2014 - version 2.5
+   - Add new add-on to the bundle: Zoom or Magnify (let user view more image details)
+
+05.10.2014 - version 2.4
+   - Add new add-on to the bundle: Carousel & Gallery
+
+24.09.2014 - version 2.3.1
+   - Add Font Awesome icon support for the tab menu
+
+22.09.2014 - version 2.3
+   - Add new add-on to the bundle: Tabs
+   - Update the DA Gallery, compatible with VC 4.3
+
+14.09.2014 - version 2.2
+   - Add new add-on to the bundle: CSS3 Accordion
+   - Update the Testimonial Carousel, compatible with VC 4.3
+
+05.09.2014 - version 2.1.1
+   - Add pulse animation, hotspot circle dot color option for the Image HotSpot add-on
+
+04.09.2014 - version 2.1
+   - Add new add-on to the bundle: To Do List (or Price Table)
+   - Update Font Awesome to 4.2
+   - Fix some typo error.
+
+28.08.2014 - version 2.0
+   - Add new add-on to the bundle: Image Hotspot with Tooltip
+   - Update the add-on icon in the admin area, add description for each add on
+
+22.08.2014 - version 1.9
+   - Add new add-on to the bundle: Animate Button 01
+   - Update the icon in the backend editor, add description for each add-on.
+
+19.08.2014 - version 1.8
+   - Add new add-on to the bundle: Parallax
+   - Add a container width option in the iHoversion backend, help you to control the thumbnails position in the column.
+
+12.08.2014 - version 1.7
+   - Add new add-on to the bundle: Image with Arrow
+
+5.08.2014 - version 1.6
+   - Add new add-on to the bundle: Product Coversion Gallery
+
+15.07.2014 - version 1.5
+   - Fix the layout number does not work in Medium Gallery
+
+10.07.2014 - version 1.5
+   - Add Medium Gallery extension
+   - Add Ribbon extension
+
+18.06.2014 - version 1.3
+   - Add Figure Navigation extension
+   - Add Animate Text extension
+
+8.06.2014 - version 1.2.1
+   - Fix the iHoversion images maybe blank if choose the custom link
+   - Add an option: layout the images after all the images are all loaded, make it compatible with some theme like 'the7'
+
+7.06.2014 - version 1.2
+   - Add Stack Gallery extension
+   - Make it compatible with VC which is installed with a theme
+
+27.05.2014 - version 1.1.1
+   - Make it compatible with Visual Composer 4.2 update
+
+26.05.2014 - version 1.1
+   - Add Testimonial Carousel extension, now there are 10 extensions in the package
+   - Update Font Awesome to 4.1
+   - Make all extensions compatible with WP_DEBUG set to true, fix the warning in the WordPress debug mode
+   - Fix a bug may cause the editor in the backend is not clickable
+
+13.05.2014
+   - Created.
